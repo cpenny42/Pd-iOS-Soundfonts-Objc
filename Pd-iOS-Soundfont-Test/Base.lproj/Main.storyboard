@@ -29,6 +29,7 @@
                                 </constraints>
                                 <state key="normal" title="Note 2"/>
                                 <connections>
+                                    <action selector="noteTwoOff:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="5sI-p9-1S2"/>
                                     <action selector="noteTwoOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J2u-15-6FG"/>
                                     <action selector="noteTwoOn:" destination="BYZ-38-t0r" eventType="touchDown" id="Yzq-CZ-DWd"/>
                                 </connections>
@@ -42,6 +43,7 @@
                                 <state key="normal" title="Note 3"/>
                                 <connections>
                                     <action selector="noteThreeOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VNS-Ga-aVn"/>
+                                    <action selector="noteThreeOff:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="ji6-mJ-WqN"/>
                                     <action selector="noteThreeOn:" destination="BYZ-38-t0r" eventType="touchDown" id="X3r-1m-dLV"/>
                                 </connections>
                             </button>
@@ -51,6 +53,7 @@
                                 <state key="normal" title="Note 4"/>
                                 <connections>
                                     <action selector="noteFourOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mte-fp-KPf"/>
+                                    <action selector="noteFourOff:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="zfC-en-cSO"/>
                                     <action selector="noteFourOn:" destination="BYZ-38-t0r" eventType="touchDown" id="B9y-j6-erU"/>
                                 </connections>
                             </button>
@@ -62,6 +65,7 @@
                                 </constraints>
                                 <state key="normal" title="Note 1"/>
                                 <connections>
+                                    <action selector="noteOneOff:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="HU9-XN-USg"/>
                                     <action selector="noteOneOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tki-IG-wVJ"/>
                                     <action selector="noteOneOn:" destination="BYZ-38-t0r" eventType="touchDown" id="03l-8o-NYy"/>
                                 </connections>

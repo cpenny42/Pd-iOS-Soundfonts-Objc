@@ -45,6 +45,41 @@
 }
 
 // !!!!!!!!!!!!!!! VERY IMPORTANT - SOUNDFONT NAMES CANNOT HAVE SPACES!!!!!!!!!!!!!!!
+/*
+    Loads a soundfont - THE SOUNDFONT CAN'T HAVE SPACES IN ITS NAME!!!!!!!!!
+    It also must be the full, exact file name (aka "Banjo.sf2" instead of "Banjo")
+ */
+- (void)loadSoundfont:(NSString *)soundfont {
+    NSString* path = [[NSBundle mainBundle] resourcePath];
+    
+    NSString* command = [NSString stringWithFormat:@"set %@/%@", path, soundfont];
+    
+    [self sendString:command toReceiver:@"input"];
+}
+
+
+/*
+    To play a note with the soundfonts patch, just send a note, velocity pair.
+    Always send note-offs eventually - if you don't there will be a memory leak
+ */
+
+-(void)noteOn:(int)note withVelocity:(int)velocity {
+    [self sendString:[NSString stringWithFormat:@"%d %d", note, velocity] toReceiver:@"input"];
+}
+
+-(void)noteOff:(int)note {
+    [self sendString:[NSString stringWithFormat:@"%d 0", note] toReceiver:@"input"];
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /*
@@ -64,12 +99,7 @@
     [PdExternals setup];
     [PdBase openFile:@"soundfont-controller.pd" path:[[NSBundle mainBundle] resourcePath]];
     
-    NSString* path = [[NSBundle mainBundle] resourcePath];
-    NSString* soundfont = @"AwesomeGrandPiano.sf2";
-    
-    NSString* command = [NSString stringWithFormat:@"set %@/%@", path, soundfont];
-    
-    [self sendString:command toReceiver:@"input"];
+    [self loadSoundfont:@"AwesomeGrandPiano.sf2"];
 }
 
 
@@ -78,37 +108,32 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-    To play a note with the soundfonts patch, just send a note, velocity pair.
-    Always send note-offs eventually - if you don't there will be a memory leak
- */
-
 - (IBAction)noteOneOn:(id)sender {
-    [self sendString:@"66 123" toReceiver:@"input"];
+    [self noteOn:66 withVelocity:123];
 }
 - (IBAction)noteOneOff:(id)sender {
-    [self sendString:@"66 0" toReceiver:@"input"];
+    [self noteOff:66];
 }
 
 - (IBAction)noteTwoOn:(id)sender {
-    [self sendString:@"40 90" toReceiver:@"input"];
+    [self noteOn:40 withVelocity:40];
 }
 - (IBAction)noteTwoOff:(id)sender {
-    [self sendString:@"40 0" toReceiver:@"input"];
+    [self noteOff:40];
 }
 
 - (IBAction)noteThreeOn:(id)sender {
-    [self sendString:@"80 100" toReceiver:@"input"];
+    [self noteOn:80 withVelocity:80];
 }
 - (IBAction)noteThreeOff:(id)sender {
-    [self sendString:@"80 0" toReceiver:@"input"];
+    [self noteOff:80];
 }
 
 - (IBAction)noteFourOn:(id)sender {
-    [self sendString:@"82 115" toReceiver:@"input"];
+    [self noteOn:82 withVelocity:100];
 }
 - (IBAction)noteFourOff:(id)sender {
-    [self sendString:@"82 0" toReceiver:@"input"];
+    [self noteOff:82];
 }
 
 
