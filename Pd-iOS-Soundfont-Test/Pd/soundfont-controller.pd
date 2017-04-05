@@ -1,0 +1,11 @@
+#N canvas 403 383 450 300 10;
+#X obj 71 89 soundfonts;
+#X obj 71 39 r input;
+#X obj 71 59 list trim;
+#X obj 149 76 print pd-input;
+#X obj 71 129 dac~;
+#X connect 0 0 4 0;
+#X connect 0 1 4 1;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 0 0;

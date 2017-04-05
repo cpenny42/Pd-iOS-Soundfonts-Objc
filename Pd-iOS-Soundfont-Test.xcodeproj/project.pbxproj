@@ -7,15 +7,176 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EF06794E81A65BF6DB5F7AD /* libPods-Pd-iOS-Soundfont-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4435208794A510E748BFD7A8 /* libPods-Pd-iOS-Soundfont-Test.a */; };
 		FA15D28B1E95505A009C01E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15D28A1E95505A009C01E0 /* main.m */; };
 		FA15D28E1E95505A009C01E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15D28D1E95505A009C01E0 /* AppDelegate.m */; };
 		FA15D2911E95505A009C01E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15D2901E95505A009C01E0 /* ViewController.m */; };
 		FA15D2941E95505A009C01E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA15D2921E95505A009C01E0 /* Main.storyboard */; };
 		FA15D2961E95505A009C01E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA15D2951E95505A009C01E0 /* Assets.xcassets */; };
 		FA15D2991E95505A009C01E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA15D2971E95505A009C01E0 /* LaunchScreen.storyboard */; };
+		FA15DEC71E955145009C01E0 /* fluid_adriver.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DDEF1E955145009C01E0 /* fluid_adriver.c */; };
+		FA15DEC81E955145009C01E0 /* fluid_adsr_env.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DDF11E955145009C01E0 /* fluid_adsr_env.c */; };
+		FA15DEC91E955145009C01E0 /* fluid_alsa.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DDF31E955145009C01E0 /* fluid_alsa.c */; };
+		FA15DECA1E955145009C01E0 /* fluid_aufile.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DDF41E955145009C01E0 /* fluid_aufile.c */; };
+		FA15DECB1E955145009C01E0 /* fluid_chan.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DDF51E955145009C01E0 /* fluid_chan.c */; };
+		FA15DECC1E955145009C01E0 /* fluid_chorus.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DDF71E955145009C01E0 /* fluid_chorus.c */; };
+		FA15DECD1E955145009C01E0 /* fluid_cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DDF91E955145009C01E0 /* fluid_cmd.c */; };
+		FA15DECE1E955145009C01E0 /* fluid_conv.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DDFB1E955145009C01E0 /* fluid_conv.c */; };
+		FA15DECF1E955145009C01E0 /* fluid_coreaudio.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DDFD1E955145009C01E0 /* fluid_coreaudio.c */; };
+		FA15DED01E955145009C01E0 /* fluid_coremidi.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DDFE1E955145009C01E0 /* fluid_coremidi.c */; };
+		FA15DED11E955145009C01E0 /* fluid_dart.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DDFF1E955145009C01E0 /* fluid_dart.c */; };
+		FA15DED21E955145009C01E0 /* fluid_defsfont.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE001E955145009C01E0 /* fluid_defsfont.c */; };
+		FA15DED31E955145009C01E0 /* fluid_event.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE021E955145009C01E0 /* fluid_event.c */; };
+		FA15DED41E955145009C01E0 /* fluid_event_queue.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE041E955145009C01E0 /* fluid_event_queue.c */; };
+		FA15DED51E955145009C01E0 /* fluid_filerenderer.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE061E955145009C01E0 /* fluid_filerenderer.c */; };
+		FA15DED61E955145009C01E0 /* fluid_gen.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE071E955145009C01E0 /* fluid_gen.c */; };
+		FA15DED71E955145009C01E0 /* fluid_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE091E955145009C01E0 /* fluid_hash.c */; };
+		FA15DED81E955145009C01E0 /* fluid_iir_filter.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE0B1E955145009C01E0 /* fluid_iir_filter.c */; };
+		FA15DED91E955145009C01E0 /* fluid_ladspa.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE0D1E955145009C01E0 /* fluid_ladspa.c */; };
+		FA15DEDA1E955145009C01E0 /* fluid_lfo.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE0F1E955145009C01E0 /* fluid_lfo.c */; };
+		FA15DEDB1E955145009C01E0 /* fluid_list.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE111E955145009C01E0 /* fluid_list.c */; };
+		FA15DEDC1E955145009C01E0 /* fluid_mdriver.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE131E955145009C01E0 /* fluid_mdriver.c */; };
+		FA15DEDD1E955145009C01E0 /* fluid_midi.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE151E955145009C01E0 /* fluid_midi.c */; };
+		FA15DEDE1E955145009C01E0 /* fluid_midi_router.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE171E955145009C01E0 /* fluid_midi_router.c */; };
+		FA15DEDF1E955145009C01E0 /* fluid_midishare.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE191E955145009C01E0 /* fluid_midishare.c */; };
+		FA15DEE01E955145009C01E0 /* fluid_mod.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE1A1E955145009C01E0 /* fluid_mod.c */; };
+		FA15DEE11E955145009C01E0 /* fluid_oss.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE1C1E955145009C01E0 /* fluid_oss.c */; };
+		FA15DEE21E955145009C01E0 /* fluid_ramsfont.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE1E1E955145009C01E0 /* fluid_ramsfont.c */; };
+		FA15DEE31E955145009C01E0 /* fluid_rev.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE201E955145009C01E0 /* fluid_rev.c */; };
+		FA15DEE41E955145009C01E0 /* fluid_ringbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE221E955145009C01E0 /* fluid_ringbuffer.c */; };
+		FA15DEE51E955145009C01E0 /* fluid_rtkit.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE241E955145009C01E0 /* fluid_rtkit.c */; };
+		FA15DEE61E955145009C01E0 /* fluid_rvoice.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE261E955145009C01E0 /* fluid_rvoice.c */; };
+		FA15DEE71E955145009C01E0 /* fluid_rvoice_dsp.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE281E955145009C01E0 /* fluid_rvoice_dsp.c */; };
+		FA15DEE81E955145009C01E0 /* fluid_rvoice_event.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE291E955145009C01E0 /* fluid_rvoice_event.c */; };
+		FA15DEE91E955145009C01E0 /* fluid_rvoice_handler.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE2B1E955145009C01E0 /* fluid_rvoice_handler.c */; };
+		FA15DEEA1E955145009C01E0 /* fluid_rvoice_mixer.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE2D1E955145009C01E0 /* fluid_rvoice_mixer.c */; };
+		FA15DEEB1E955145009C01E0 /* fluid_seq.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE2F1E955145009C01E0 /* fluid_seq.c */; };
+		FA15DEEC1E955145009C01E0 /* fluid_seqbind.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE301E955145009C01E0 /* fluid_seqbind.c */; };
+		FA15DEED1E955145009C01E0 /* fluid_settings.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE311E955145009C01E0 /* fluid_settings.c */; };
+		FA15DEEE1E955145009C01E0 /* fluid_sndmgr.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE341E955145009C01E0 /* fluid_sndmgr.c */; };
+		FA15DEEF1E955145009C01E0 /* fluid_synth.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE351E955145009C01E0 /* fluid_synth.c */; };
+		FA15DEF01E955145009C01E0 /* fluid_sys.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE371E955145009C01E0 /* fluid_sys.c */; };
+		FA15DEF11E955145009C01E0 /* fluid_tuning.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE391E955145009C01E0 /* fluid_tuning.c */; };
+		FA15DEF21E955145009C01E0 /* fluid_voice.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE3B1E955145009C01E0 /* fluid_voice.c */; };
+		FA15DEF31E955145009C01E0 /* asnprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE401E955145009C01E0 /* asnprintf.c */; };
+		FA15DEF41E955145009C01E0 /* printf-args.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE421E955145009C01E0 /* printf-args.c */; };
+		FA15DEF51E955145009C01E0 /* printf-parse.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE441E955145009C01E0 /* printf-parse.c */; };
+		FA15DEF61E955145009C01E0 /* printf.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE461E955145009C01E0 /* printf.c */; };
+		FA15DEF71E955145009C01E0 /* vasnprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE481E955145009C01E0 /* vasnprintf.c */; };
+		FA15DEF81E955145009C01E0 /* localcharset.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE911E955145009C01E0 /* localcharset.c */; };
+		FA15DEF91E955145009C01E0 /* garray.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE941E955145009C01E0 /* garray.c */; };
+		FA15DEFA1E955145009C01E0 /* gasyncqueue.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE951E955145009C01E0 /* gasyncqueue.c */; };
+		FA15DEFB1E955145009C01E0 /* gatomic.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE961E955145009C01E0 /* gatomic.c */; };
+		FA15DEFC1E955145009C01E0 /* gbacktrace.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE971E955145009C01E0 /* gbacktrace.c */; };
+		FA15DEFD1E955145009C01E0 /* gbytes.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE981E955145009C01E0 /* gbytes.c */; };
+		FA15DEFE1E955145009C01E0 /* gcharset.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE991E955145009C01E0 /* gcharset.c */; };
+		FA15DEFF1E955145009C01E0 /* gconvert.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE9A1E955145009C01E0 /* gconvert.c */; };
+		FA15DF001E955145009C01E0 /* gdir.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE9B1E955145009C01E0 /* gdir.c */; };
+		FA15DF011E955145009C01E0 /* genviron.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE9C1E955145009C01E0 /* genviron.c */; };
+		FA15DF021E955145009C01E0 /* gerror.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE9D1E955145009C01E0 /* gerror.c */; };
+		FA15DF031E955145009C01E0 /* gfileutils.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE9E1E955145009C01E0 /* gfileutils.c */; };
+		FA15DF041E955145009C01E0 /* ggettext.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DE9F1E955145009C01E0 /* ggettext.c */; };
+		FA15DF051E955145009C01E0 /* ghash.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEA01E955145009C01E0 /* ghash.c */; };
+		FA15DF061E955145009C01E0 /* ghook.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEA11E955145009C01E0 /* ghook.c */; };
+		FA15DF071E955145009C01E0 /* giochannel.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEA21E955145009C01E0 /* giochannel.c */; };
+		FA15DF081E955145009C01E0 /* glib-init.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEA31E955145009C01E0 /* glib-init.c */; };
+		FA15DF091E955145009C01E0 /* glib-private.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEA41E955145009C01E0 /* glib-private.c */; };
+		FA15DF0A1E955145009C01E0 /* glib-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEA51E955145009C01E0 /* glib-unix.c */; };
+		FA15DF0B1E955145009C01E0 /* glist.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEA61E955145009C01E0 /* glist.c */; };
+		FA15DF0C1E955145009C01E0 /* gmain.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEA71E955145009C01E0 /* gmain.c */; };
+		FA15DF0D1E955145009C01E0 /* gmem.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEA81E955145009C01E0 /* gmem.c */; };
+		FA15DF0E1E955145009C01E0 /* gmessages.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEA91E955145009C01E0 /* gmessages.c */; };
+		FA15DF0F1E955145009C01E0 /* gnode.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEAA1E955145009C01E0 /* gnode.c */; };
+		FA15DF101E955145009C01E0 /* gpattern.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEAB1E955145009C01E0 /* gpattern.c */; };
+		FA15DF111E955145009C01E0 /* gpoll.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEAC1E955145009C01E0 /* gpoll.c */; };
+		FA15DF121E955145009C01E0 /* gprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEAD1E955145009C01E0 /* gprintf.c */; };
+		FA15DF131E955145009C01E0 /* gqsort.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEAE1E955145009C01E0 /* gqsort.c */; };
+		FA15DF141E955145009C01E0 /* gquark.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEAF1E955145009C01E0 /* gquark.c */; };
+		FA15DF151E955145009C01E0 /* gqueue.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEB01E955145009C01E0 /* gqueue.c */; };
+		FA15DF161E955145009C01E0 /* grand.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEB11E955145009C01E0 /* grand.c */; };
+		FA15DF171E955145009C01E0 /* gshell.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEB21E955145009C01E0 /* gshell.c */; };
+		FA15DF181E955145009C01E0 /* gslice.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEB31E955145009C01E0 /* gslice.c */; };
+		FA15DF191E955145009C01E0 /* gslist.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEB41E955145009C01E0 /* gslist.c */; };
+		FA15DF1A1E955145009C01E0 /* gspawn.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEB51E955145009C01E0 /* gspawn.c */; };
+		FA15DF1B1E955145009C01E0 /* gstdio.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEB61E955145009C01E0 /* gstdio.c */; };
+		FA15DF1C1E955145009C01E0 /* gstrfuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEB71E955145009C01E0 /* gstrfuncs.c */; };
+		FA15DF1D1E955145009C01E0 /* gstring.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEB81E955145009C01E0 /* gstring.c */; };
+		FA15DF1E1E955145009C01E0 /* gstringchunk.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEB91E955145009C01E0 /* gstringchunk.c */; };
+		FA15DF1F1E955145009C01E0 /* gtestutils.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEBA1E955145009C01E0 /* gtestutils.c */; };
+		FA15DF201E955145009C01E0 /* gthread-deprecated.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEBB1E955145009C01E0 /* gthread-deprecated.c */; };
+		FA15DF211E955145009C01E0 /* gthread-posix.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEBC1E955145009C01E0 /* gthread-posix.c */; };
+		FA15DF221E955145009C01E0 /* gthread.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEBD1E955145009C01E0 /* gthread.c */; };
+		FA15DF231E955145009C01E0 /* gthreadpool.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEBE1E955145009C01E0 /* gthreadpool.c */; };
+		FA15DF241E955145009C01E0 /* gtimer.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEBF1E955145009C01E0 /* gtimer.c */; };
+		FA15DF251E955145009C01E0 /* gtrashstack.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEC01E955145009C01E0 /* gtrashstack.c */; };
+		FA15DF261E955145009C01E0 /* gunicollate.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEC11E955145009C01E0 /* gunicollate.c */; };
+		FA15DF271E955145009C01E0 /* gunidecomp.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEC21E955145009C01E0 /* gunidecomp.c */; };
+		FA15DF281E955145009C01E0 /* guniprop.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEC31E955145009C01E0 /* guniprop.c */; };
+		FA15DF291E955145009C01E0 /* gutf8.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEC41E955145009C01E0 /* gutf8.c */; };
+		FA15DF2A1E955145009C01E0 /* gutils.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEC51E955145009C01E0 /* gutils.c */; };
+		FA15DF2B1E955145009C01E0 /* gwakeup.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DEC61E955145009C01E0 /* gwakeup.c */; };
+		FA15DF2E1E955156009C01E0 /* PdExternals.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15DF2D1E955156009C01E0 /* PdExternals.m */; };
+		FA15DF301E95519C009C01E0 /* soundfont-controller.pd in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF2F1E95519C009C01E0 /* soundfont-controller.pd */; };
+		FA15DF701E9551A9009C01E0 /* AwesomeGrandPiano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF331E9551A9009C01E0 /* AwesomeGrandPiano.sf2 */; };
+		FA15DF711E9551A9009C01E0 /* Basic Grand Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF341E9551A9009C01E0 /* Basic Grand Piano.sf2 */; };
+		FA15DF721E9551A9009C01E0 /* Bright Grand Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF351E9551A9009C01E0 /* Bright Grand Piano.sf2 */; };
+		FA15DF731E9551A9009C01E0 /* Buzzy Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF361E9551A9009C01E0 /* Buzzy Piano.sf2 */; };
+		FA15DF741E9551A9009C01E0 /* Close Chorus Grand Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF371E9551A9009C01E0 /* Close Chorus Grand Piano.sf2 */; };
+		FA15DF751E9551A9009C01E0 /* Gentle Grand Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF381E9551A9009C01E0 /* Gentle Grand Piano.sf2 */; };
+		FA15DF761E9551A9009C01E0 /* Grandma's Living Room Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF391E9551A9009C01E0 /* Grandma's Living Room Piano.sf2 */; };
+		FA15DF771E9551A9009C01E0 /* Harsh Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF3A1E9551A9009C01E0 /* Harsh Piano.sf2 */; };
+		FA15DF781E9551A9009C01E0 /* Meaty Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF3B1E9551A9009C01E0 /* Meaty Piano.sf2 */; };
+		FA15DF791E9551A9009C01E0 /* Muted Grand Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF3C1E9551A9009C01E0 /* Muted Grand Piano.sf2 */; };
+		FA15DF7A1E9551A9009C01E0 /* Sharp & Bright Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF3D1E9551A9009C01E0 /* Sharp & Bright Piano.sf2 */; };
+		FA15DF7B1E9551A9009C01E0 /* Theater Upright Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF3E1E9551A9009C01E0 /* Theater Upright Piano.sf2 */; };
+		FA15DF7C1E9551A9009C01E0 /* Tight Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF3F1E9551A9009C01E0 /* Tight Piano.sf2 */; };
+		FA15DF7D1E9551A9009C01E0 /* Upright Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF401E9551A9009C01E0 /* Upright Piano.sf2 */; };
+		FA15DF7E1E9551A9009C01E0 /* Flugelhorn.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF421E9551A9009C01E0 /* Flugelhorn.sf2 */; };
+		FA15DF7F1E9551A9009C01E0 /* Muted Trombone.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF431E9551A9009C01E0 /* Muted Trombone.sf2 */; };
+		FA15DF801E9551A9009C01E0 /* Basic Electric Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF451E9551A9009C01E0 /* Basic Electric Piano.sf2 */; };
+		FA15DF811E9551A9009C01E0 /* Bright FM Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF461E9551A9009C01E0 /* Bright FM Piano.sf2 */; };
+		FA15DF821E9551A9009C01E0 /* Chorus Electric Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF471E9551A9009C01E0 /* Chorus Electric Piano.sf2 */; };
+		FA15DF831E9551A9009C01E0 /* Classic Electric Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF481E9551A9009C01E0 /* Classic Electric Piano.sf2 */; };
+		FA15DF841E9551A9009C01E0 /* Effected Bright Electric Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF491E9551A9009C01E0 /* Effected Bright Electric Piano.sf2 */; };
+		FA15DF851E9551A9009C01E0 /* Electric Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF4A1E9551A9009C01E0 /* Electric Piano.sf2 */; };
+		FA15DF861E9551A9009C01E0 /* Fake Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF4B1E9551A9009C01E0 /* Fake Piano.sf2 */; };
+		FA15DF871E9551A9009C01E0 /* Fender Rhodes Electric Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF4C1E9551A9009C01E0 /* Fender Rhodes Electric Piano.sf2 */; };
+		FA15DF881E9551A9009C01E0 /* Glowing Electric Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF4D1E9551A9009C01E0 /* Glowing Electric Piano.sf2 */; };
+		FA15DF891E9551A9009C01E0 /* Gold Plated Wood Electric Piano.SF2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF4E1E9551A9009C01E0 /* Gold Plated Wood Electric Piano.SF2 */; };
+		FA15DF8A1E9551A9009C01E0 /* Muted Grand Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF4F1E9551A9009C01E0 /* Muted Grand Piano.sf2 */; };
+		FA15DF8B1E9551A9009C01E0 /* Synth Grand Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF501E9551A9009C01E0 /* Synth Grand Piano.sf2 */; };
+		FA15DF8C1E9551A9009C01E0 /* SC88 Kit.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF521E9551A9009C01E0 /* SC88 Kit.sf2 */; };
+		FA15DF8D1E9551A9009C01E0 /* Xylophone.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF531E9551A9009C01E0 /* Xylophone.sf2 */; };
+		FA15DF8E1E9551A9009C01E0 /* Banjo.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF551E9551A9009C01E0 /* Banjo.sf2 */; };
+		FA15DF8F1E9551A9009C01E0 /* Cello.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF561E9551A9009C01E0 /* Cello.sf2 */; };
+		FA15DF901E9551A9009C01E0 /* Ibanez Hollowbody.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF571E9551A9009C01E0 /* Ibanez Hollowbody.sf2 */; };
+		FA15DF911E9551A9009C01E0 /* Les Paul.SF2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF581E9551A9009C01E0 /* Les Paul.SF2 */; };
+		FA15DF921E9551A9009C01E0 /* Saz.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF591E9551A9009C01E0 /* Saz.sf2 */; };
+		FA15DF931E9551A9009C01E0 /* Viola.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF5A1E9551A9009C01E0 /* Viola.sf2 */; };
+		FA15DF941E9551A9009C01E0 /* Violin.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF5B1E9551A9009C01E0 /* Violin.sf2 */; };
+		FA15DF951E9551A9009C01E0 /* Attacked Analog.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF5D1E9551A9009C01E0 /* Attacked Analog.sf2 */; };
+		FA15DF961E9551A9009C01E0 /* Chorus Lead.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF5E1E9551A9009C01E0 /* Chorus Lead.sf2 */; };
+		FA15DF971E9551A9009C01E0 /* Beautiful Pad.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF601E9551A9009C01E0 /* Beautiful Pad.sf2 */; };
+		FA15DF981E9551A9009C01E0 /* Epic Pad.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF611E9551A9009C01E0 /* Epic Pad.sf2 */; };
+		FA15DF991E9551A9009C01E0 /* Mechanical Pad.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF621E9551A9009C01E0 /* Mechanical Pad.sf2 */; };
+		FA15DF9A1E9551A9009C01E0 /* Mixed Pad.SF2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF631E9551A9009C01E0 /* Mixed Pad.SF2 */; };
+		FA15DF9B1E9551A9009C01E0 /* Saw Pad.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF641E9551A9009C01E0 /* Saw Pad.sf2 */; };
+		FA15DF9C1E9551A9009C01E0 /* Shiny Pad.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF651E9551A9009C01E0 /* Shiny Pad.sf2 */; };
+		FA15DF9D1E9551A9009C01E0 /* Suspense Pad.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF661E9551A9009C01E0 /* Suspense Pad.sf2 */; };
+		FA15DF9E1E9551A9009C01E0 /* Vocal Synth.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF671E9551A9009C01E0 /* Vocal Synth.sf2 */; };
+		FA15DF9F1E9551A9009C01E0 /* Weather Pad.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF681E9551A9009C01E0 /* Weather Pad.sf2 */; };
+		FA15DFA01E9551A9009C01E0 /* Bolivian Flute.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF6A1E9551A9009C01E0 /* Bolivian Flute.sf2 */; };
+		FA15DFA11E9551A9009C01E0 /* Church Organ.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF6B1E9551A9009C01E0 /* Church Organ.sf2 */; };
+		FA15DFA21E9551A9009C01E0 /* Enigma Flute.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF6C1E9551A9009C01E0 /* Enigma Flute.sf2 */; };
+		FA15DFA31E9551A9009C01E0 /* Mixed Chorus.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF6D1E9551A9009C01E0 /* Mixed Chorus.sf2 */; };
+		FA15DFA41E9551A9009C01E0 /* Strawberry Fields Mellotron Flute.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = FA15DF6E1E9551A9009C01E0 /* Strawberry Fields Mellotron Flute.sf2 */; };
+		FA15DFA51E9551A9009C01E0 /* soundfonts.c in Sources */ = {isa = PBXBuildFile; fileRef = FA15DF6F1E9551A9009C01E0 /* soundfonts.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2644B1940B5A9AA576433168 /* Pods-Pd-iOS-Soundfont-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pd-iOS-Soundfont-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pd-iOS-Soundfont-Test/Pods-Pd-iOS-Soundfont-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		4435208794A510E748BFD7A8 /* libPods-Pd-iOS-Soundfont-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pd-iOS-Soundfont-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D1C7A137985B3CEF7E9B6A1 /* Pods-Pd-iOS-Soundfont-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pd-iOS-Soundfont-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pd-iOS-Soundfont-Test/Pods-Pd-iOS-Soundfont-Test.release.xcconfig"; sourceTree = "<group>"; };
 		FA15D2861E95505A009C01E0 /* Pd-iOS-Soundfont-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pd-iOS-Soundfont-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA15D28A1E95505A009C01E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA15D28C1E95505A009C01E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +187,293 @@
 		FA15D2951E95505A009C01E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA15D2981E95505A009C01E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA15D29A1E95505A009C01E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA15DDDB1E955145009C01E0 /* audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio.h; sourceTree = "<group>"; };
+		FA15DDDC1E955145009C01E0 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		FA15DDDD1E955145009C01E0 /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = event.h; sourceTree = "<group>"; };
+		FA15DDDE1E955145009C01E0 /* gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gen.h; sourceTree = "<group>"; };
+		FA15DDDF1E955145009C01E0 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		FA15DDE01E955145009C01E0 /* midi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = midi.h; sourceTree = "<group>"; };
+		FA15DDE11E955145009C01E0 /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		FA15DDE21E955145009C01E0 /* mod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mod.h; sourceTree = "<group>"; };
+		FA15DDE31E955145009C01E0 /* ramsfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ramsfont.h; sourceTree = "<group>"; };
+		FA15DDE41E955145009C01E0 /* seq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seq.h; sourceTree = "<group>"; };
+		FA15DDE51E955145009C01E0 /* seqbind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seqbind.h; sourceTree = "<group>"; };
+		FA15DDE61E955145009C01E0 /* settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settings.h; sourceTree = "<group>"; };
+		FA15DDE71E955145009C01E0 /* sfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sfont.h; sourceTree = "<group>"; };
+		FA15DDE81E955145009C01E0 /* shell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shell.h; sourceTree = "<group>"; };
+		FA15DDE91E955145009C01E0 /* synth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = synth.h; sourceTree = "<group>"; };
+		FA15DDEA1E955145009C01E0 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		FA15DDEB1E955145009C01E0 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		FA15DDEC1E955145009C01E0 /* voice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voice.h; sourceTree = "<group>"; };
+		FA15DDED1E955145009C01E0 /* fluidsynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluidsynth.h; sourceTree = "<group>"; };
+		FA15DDEF1E955145009C01E0 /* fluid_adriver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_adriver.c; sourceTree = "<group>"; };
+		FA15DDF01E955145009C01E0 /* fluid_adriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_adriver.h; sourceTree = "<group>"; };
+		FA15DDF11E955145009C01E0 /* fluid_adsr_env.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_adsr_env.c; sourceTree = "<group>"; };
+		FA15DDF21E955145009C01E0 /* fluid_adsr_env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_adsr_env.h; sourceTree = "<group>"; };
+		FA15DDF31E955145009C01E0 /* fluid_alsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_alsa.c; sourceTree = "<group>"; };
+		FA15DDF41E955145009C01E0 /* fluid_aufile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_aufile.c; sourceTree = "<group>"; };
+		FA15DDF51E955145009C01E0 /* fluid_chan.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_chan.c; sourceTree = "<group>"; };
+		FA15DDF61E955145009C01E0 /* fluid_chan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_chan.h; sourceTree = "<group>"; };
+		FA15DDF71E955145009C01E0 /* fluid_chorus.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_chorus.c; sourceTree = "<group>"; };
+		FA15DDF81E955145009C01E0 /* fluid_chorus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_chorus.h; sourceTree = "<group>"; };
+		FA15DDF91E955145009C01E0 /* fluid_cmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_cmd.c; sourceTree = "<group>"; };
+		FA15DDFA1E955145009C01E0 /* fluid_cmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_cmd.h; sourceTree = "<group>"; };
+		FA15DDFB1E955145009C01E0 /* fluid_conv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_conv.c; sourceTree = "<group>"; };
+		FA15DDFC1E955145009C01E0 /* fluid_conv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_conv.h; sourceTree = "<group>"; };
+		FA15DDFD1E955145009C01E0 /* fluid_coreaudio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_coreaudio.c; sourceTree = "<group>"; };
+		FA15DDFE1E955145009C01E0 /* fluid_coremidi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_coremidi.c; sourceTree = "<group>"; };
+		FA15DDFF1E955145009C01E0 /* fluid_dart.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_dart.c; sourceTree = "<group>"; };
+		FA15DE001E955145009C01E0 /* fluid_defsfont.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_defsfont.c; sourceTree = "<group>"; };
+		FA15DE011E955145009C01E0 /* fluid_defsfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_defsfont.h; sourceTree = "<group>"; };
+		FA15DE021E955145009C01E0 /* fluid_event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_event.c; sourceTree = "<group>"; };
+		FA15DE031E955145009C01E0 /* fluid_event_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_event_priv.h; sourceTree = "<group>"; };
+		FA15DE041E955145009C01E0 /* fluid_event_queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_event_queue.c; sourceTree = "<group>"; };
+		FA15DE051E955145009C01E0 /* fluid_event_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_event_queue.h; sourceTree = "<group>"; };
+		FA15DE061E955145009C01E0 /* fluid_filerenderer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_filerenderer.c; sourceTree = "<group>"; };
+		FA15DE071E955145009C01E0 /* fluid_gen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_gen.c; sourceTree = "<group>"; };
+		FA15DE081E955145009C01E0 /* fluid_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_gen.h; sourceTree = "<group>"; };
+		FA15DE091E955145009C01E0 /* fluid_hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_hash.c; sourceTree = "<group>"; };
+		FA15DE0A1E955145009C01E0 /* fluid_hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_hash.h; sourceTree = "<group>"; };
+		FA15DE0B1E955145009C01E0 /* fluid_iir_filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_iir_filter.c; sourceTree = "<group>"; };
+		FA15DE0C1E955145009C01E0 /* fluid_iir_filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_iir_filter.h; sourceTree = "<group>"; };
+		FA15DE0D1E955145009C01E0 /* fluid_ladspa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_ladspa.c; sourceTree = "<group>"; };
+		FA15DE0E1E955145009C01E0 /* fluid_ladspa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_ladspa.h; sourceTree = "<group>"; };
+		FA15DE0F1E955145009C01E0 /* fluid_lfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_lfo.c; sourceTree = "<group>"; };
+		FA15DE101E955145009C01E0 /* fluid_lfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_lfo.h; sourceTree = "<group>"; };
+		FA15DE111E955145009C01E0 /* fluid_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_list.c; sourceTree = "<group>"; };
+		FA15DE121E955145009C01E0 /* fluid_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_list.h; sourceTree = "<group>"; };
+		FA15DE131E955145009C01E0 /* fluid_mdriver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_mdriver.c; sourceTree = "<group>"; };
+		FA15DE141E955145009C01E0 /* fluid_mdriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_mdriver.h; sourceTree = "<group>"; };
+		FA15DE151E955145009C01E0 /* fluid_midi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_midi.c; sourceTree = "<group>"; };
+		FA15DE161E955145009C01E0 /* fluid_midi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_midi.h; sourceTree = "<group>"; };
+		FA15DE171E955145009C01E0 /* fluid_midi_router.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_midi_router.c; sourceTree = "<group>"; };
+		FA15DE181E955145009C01E0 /* fluid_midi_router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_midi_router.h; sourceTree = "<group>"; };
+		FA15DE191E955145009C01E0 /* fluid_midishare.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_midishare.c; sourceTree = "<group>"; };
+		FA15DE1A1E955145009C01E0 /* fluid_mod.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_mod.c; sourceTree = "<group>"; };
+		FA15DE1B1E955145009C01E0 /* fluid_mod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_mod.h; sourceTree = "<group>"; };
+		FA15DE1C1E955145009C01E0 /* fluid_oss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_oss.c; sourceTree = "<group>"; };
+		FA15DE1D1E955145009C01E0 /* fluid_phase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_phase.h; sourceTree = "<group>"; };
+		FA15DE1E1E955145009C01E0 /* fluid_ramsfont.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_ramsfont.c; sourceTree = "<group>"; };
+		FA15DE1F1E955145009C01E0 /* fluid_ramsfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_ramsfont.h; sourceTree = "<group>"; };
+		FA15DE201E955145009C01E0 /* fluid_rev.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rev.c; sourceTree = "<group>"; };
+		FA15DE211E955145009C01E0 /* fluid_rev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_rev.h; sourceTree = "<group>"; };
+		FA15DE221E955145009C01E0 /* fluid_ringbuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_ringbuffer.c; sourceTree = "<group>"; };
+		FA15DE231E955145009C01E0 /* fluid_ringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_ringbuffer.h; sourceTree = "<group>"; };
+		FA15DE241E955145009C01E0 /* fluid_rtkit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rtkit.c; sourceTree = "<group>"; };
+		FA15DE251E955145009C01E0 /* fluid_rtkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_rtkit.h; sourceTree = "<group>"; };
+		FA15DE261E955145009C01E0 /* fluid_rvoice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rvoice.c; sourceTree = "<group>"; };
+		FA15DE271E955145009C01E0 /* fluid_rvoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_rvoice.h; sourceTree = "<group>"; };
+		FA15DE281E955145009C01E0 /* fluid_rvoice_dsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rvoice_dsp.c; sourceTree = "<group>"; };
+		FA15DE291E955145009C01E0 /* fluid_rvoice_event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rvoice_event.c; sourceTree = "<group>"; };
+		FA15DE2A1E955145009C01E0 /* fluid_rvoice_event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_rvoice_event.h; sourceTree = "<group>"; };
+		FA15DE2B1E955145009C01E0 /* fluid_rvoice_handler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rvoice_handler.c; sourceTree = "<group>"; };
+		FA15DE2C1E955145009C01E0 /* fluid_rvoice_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_rvoice_handler.h; sourceTree = "<group>"; };
+		FA15DE2D1E955145009C01E0 /* fluid_rvoice_mixer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rvoice_mixer.c; sourceTree = "<group>"; };
+		FA15DE2E1E955145009C01E0 /* fluid_rvoice_mixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_rvoice_mixer.h; sourceTree = "<group>"; };
+		FA15DE2F1E955145009C01E0 /* fluid_seq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_seq.c; sourceTree = "<group>"; };
+		FA15DE301E955145009C01E0 /* fluid_seqbind.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_seqbind.c; sourceTree = "<group>"; };
+		FA15DE311E955145009C01E0 /* fluid_settings.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_settings.c; sourceTree = "<group>"; };
+		FA15DE321E955145009C01E0 /* fluid_settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_settings.h; sourceTree = "<group>"; };
+		FA15DE331E955145009C01E0 /* fluid_sfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_sfont.h; sourceTree = "<group>"; };
+		FA15DE341E955145009C01E0 /* fluid_sndmgr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_sndmgr.c; sourceTree = "<group>"; };
+		FA15DE351E955145009C01E0 /* fluid_synth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_synth.c; sourceTree = "<group>"; };
+		FA15DE361E955145009C01E0 /* fluid_synth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_synth.h; sourceTree = "<group>"; };
+		FA15DE371E955145009C01E0 /* fluid_sys.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_sys.c; sourceTree = "<group>"; };
+		FA15DE381E955145009C01E0 /* fluid_sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_sys.h; sourceTree = "<group>"; };
+		FA15DE391E955145009C01E0 /* fluid_tuning.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_tuning.c; sourceTree = "<group>"; };
+		FA15DE3A1E955145009C01E0 /* fluid_tuning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_tuning.h; sourceTree = "<group>"; };
+		FA15DE3B1E955145009C01E0 /* fluid_voice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_voice.c; sourceTree = "<group>"; };
+		FA15DE3C1E955145009C01E0 /* fluid_voice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_voice.h; sourceTree = "<group>"; };
+		FA15DE3D1E955145009C01E0 /* fluidsynth_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluidsynth_priv.h; sourceTree = "<group>"; };
+		FA15DE401E955145009C01E0 /* asnprintf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = asnprintf.c; sourceTree = "<group>"; };
+		FA15DE411E955145009C01E0 /* g-gnulib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "g-gnulib.h"; sourceTree = "<group>"; };
+		FA15DE421E955145009C01E0 /* printf-args.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "printf-args.c"; sourceTree = "<group>"; };
+		FA15DE431E955145009C01E0 /* printf-args.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "printf-args.h"; sourceTree = "<group>"; };
+		FA15DE441E955145009C01E0 /* printf-parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "printf-parse.c"; sourceTree = "<group>"; };
+		FA15DE451E955145009C01E0 /* printf-parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "printf-parse.h"; sourceTree = "<group>"; };
+		FA15DE461E955145009C01E0 /* printf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = printf.c; sourceTree = "<group>"; };
+		FA15DE471E955145009C01E0 /* printf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = printf.h; sourceTree = "<group>"; };
+		FA15DE481E955145009C01E0 /* vasnprintf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vasnprintf.c; sourceTree = "<group>"; };
+		FA15DE491E955145009C01E0 /* vasnprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vasnprintf.h; sourceTree = "<group>"; };
+		FA15DE4B1E955145009C01E0 /* galloca.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = galloca.h; sourceTree = "<group>"; };
+		FA15DE4C1E955145009C01E0 /* garray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = garray.h; sourceTree = "<group>"; };
+		FA15DE4D1E955145009C01E0 /* gasyncqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gasyncqueue.h; sourceTree = "<group>"; };
+		FA15DE4E1E955145009C01E0 /* gasyncqueueprivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gasyncqueueprivate.h; sourceTree = "<group>"; };
+		FA15DE4F1E955145009C01E0 /* gatomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gatomic.h; sourceTree = "<group>"; };
+		FA15DE501E955145009C01E0 /* gbacktrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gbacktrace.h; sourceTree = "<group>"; };
+		FA15DE511E955145009C01E0 /* gbytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gbytes.h; sourceTree = "<group>"; };
+		FA15DE521E955145009C01E0 /* gcharset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcharset.h; sourceTree = "<group>"; };
+		FA15DE531E955145009C01E0 /* gcharsetprivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcharsetprivate.h; sourceTree = "<group>"; };
+		FA15DE541E955145009C01E0 /* gconstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gconstructor.h; sourceTree = "<group>"; };
+		FA15DE551E955145009C01E0 /* gconvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gconvert.h; sourceTree = "<group>"; };
+		FA15DE561E955145009C01E0 /* gdir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gdir.h; sourceTree = "<group>"; };
+		FA15DE571E955145009C01E0 /* genviron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genviron.h; sourceTree = "<group>"; };
+		FA15DE581E955145009C01E0 /* gerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gerror.h; sourceTree = "<group>"; };
+		FA15DE591E955145009C01E0 /* gfileutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfileutils.h; sourceTree = "<group>"; };
+		FA15DE5A1E955145009C01E0 /* ggettext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ggettext.h; sourceTree = "<group>"; };
+		FA15DE5B1E955145009C01E0 /* ghash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ghash.h; sourceTree = "<group>"; };
+		FA15DE5C1E955145009C01E0 /* ghook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ghook.h; sourceTree = "<group>"; };
+		FA15DE5D1E955145009C01E0 /* giochannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = giochannel.h; sourceTree = "<group>"; };
+		FA15DE5E1E955145009C01E0 /* glib-init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "glib-init.h"; sourceTree = "<group>"; };
+		FA15DE5F1E955145009C01E0 /* glib-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "glib-private.h"; sourceTree = "<group>"; };
+		FA15DE601E955145009C01E0 /* glib-unix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "glib-unix.h"; sourceTree = "<group>"; };
+		FA15DE611E955145009C01E0 /* glib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glib.h; sourceTree = "<group>"; };
+		FA15DE621E955145009C01E0 /* glib_trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glib_trace.h; sourceTree = "<group>"; };
+		FA15DE631E955145009C01E0 /* glibconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glibconfig.h; sourceTree = "<group>"; };
+		FA15DE641E955145009C01E0 /* glibintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glibintl.h; sourceTree = "<group>"; };
+		FA15DE651E955145009C01E0 /* glist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glist.h; sourceTree = "<group>"; };
+		FA15DE661E955145009C01E0 /* gmacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmacros.h; sourceTree = "<group>"; };
+		FA15DE671E955145009C01E0 /* gmain-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gmain-internal.h"; sourceTree = "<group>"; };
+		FA15DE681E955145009C01E0 /* gmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmain.h; sourceTree = "<group>"; };
+		FA15DE691E955145009C01E0 /* gmem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmem.h; sourceTree = "<group>"; };
+		FA15DE6A1E955145009C01E0 /* gmessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmessages.h; sourceTree = "<group>"; };
+		FA15DE6B1E955145009C01E0 /* gmirroringtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmirroringtable.h; sourceTree = "<group>"; };
+		FA15DE6C1E955145009C01E0 /* gnode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gnode.h; sourceTree = "<group>"; };
+		FA15DE6D1E955145009C01E0 /* gpattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gpattern.h; sourceTree = "<group>"; };
+		FA15DE6E1E955145009C01E0 /* gpoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gpoll.h; sourceTree = "<group>"; };
+		FA15DE6F1E955145009C01E0 /* gprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gprintf.h; sourceTree = "<group>"; };
+		FA15DE701E955145009C01E0 /* gprintfint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gprintfint.h; sourceTree = "<group>"; };
+		FA15DE711E955145009C01E0 /* gqsort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gqsort.h; sourceTree = "<group>"; };
+		FA15DE721E955145009C01E0 /* gquark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gquark.h; sourceTree = "<group>"; };
+		FA15DE731E955145009C01E0 /* gqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gqueue.h; sourceTree = "<group>"; };
+		FA15DE741E955145009C01E0 /* grand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grand.h; sourceTree = "<group>"; };
+		FA15DE751E955145009C01E0 /* gscripttable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gscripttable.h; sourceTree = "<group>"; };
+		FA15DE761E955145009C01E0 /* gshell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gshell.h; sourceTree = "<group>"; };
+		FA15DE771E955145009C01E0 /* gslice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gslice.h; sourceTree = "<group>"; };
+		FA15DE781E955145009C01E0 /* gslist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gslist.h; sourceTree = "<group>"; };
+		FA15DE791E955145009C01E0 /* gspawn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gspawn.h; sourceTree = "<group>"; };
+		FA15DE7A1E955145009C01E0 /* gstdio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gstdio.h; sourceTree = "<group>"; };
+		FA15DE7B1E955145009C01E0 /* gstrfuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gstrfuncs.h; sourceTree = "<group>"; };
+		FA15DE7C1E955145009C01E0 /* gstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gstring.h; sourceTree = "<group>"; };
+		FA15DE7D1E955145009C01E0 /* gstringchunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gstringchunk.h; sourceTree = "<group>"; };
+		FA15DE7E1E955145009C01E0 /* gtestutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtestutils.h; sourceTree = "<group>"; };
+		FA15DE7F1E955145009C01E0 /* gthread-depreciated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gthread-depreciated.h"; sourceTree = "<group>"; };
+		FA15DE801E955145009C01E0 /* gthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gthread.h; sourceTree = "<group>"; };
+		FA15DE811E955145009C01E0 /* gthreadpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gthreadpool.h; sourceTree = "<group>"; };
+		FA15DE821E955145009C01E0 /* gthreadprivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gthreadprivate.h; sourceTree = "<group>"; };
+		FA15DE831E955145009C01E0 /* gtimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtimer.h; sourceTree = "<group>"; };
+		FA15DE841E955145009C01E0 /* gtrashstack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtrashstack.h; sourceTree = "<group>"; };
+		FA15DE851E955145009C01E0 /* gtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtypes.h; sourceTree = "<group>"; };
+		FA15DE861E955145009C01E0 /* gunichartables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gunichartables.h; sourceTree = "<group>"; };
+		FA15DE871E955145009C01E0 /* gunicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gunicode.h; sourceTree = "<group>"; };
+		FA15DE881E955145009C01E0 /* gunicodeprivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gunicodeprivate.h; sourceTree = "<group>"; };
+		FA15DE891E955145009C01E0 /* gunicomp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gunicomp.h; sourceTree = "<group>"; };
+		FA15DE8A1E955145009C01E0 /* gunidecomp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gunidecomp.h; sourceTree = "<group>"; };
+		FA15DE8B1E955145009C01E0 /* gutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gutils.h; sourceTree = "<group>"; };
+		FA15DE8C1E955145009C01E0 /* gversionmacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gversionmacros.h; sourceTree = "<group>"; };
+		FA15DE8D1E955145009C01E0 /* gwakeup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gwakeup.h; sourceTree = "<group>"; };
+		FA15DE8E1E955145009C01E0 /* valgrind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = valgrind.h; sourceTree = "<group>"; };
+		FA15DE901E955145009C01E0 /* libcharset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libcharset.h; sourceTree = "<group>"; };
+		FA15DE911E955145009C01E0 /* localcharset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = localcharset.c; sourceTree = "<group>"; };
+		FA15DE921E955145009C01E0 /* localcharset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = localcharset.h; sourceTree = "<group>"; };
+		FA15DE941E955145009C01E0 /* garray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = garray.c; sourceTree = "<group>"; };
+		FA15DE951E955145009C01E0 /* gasyncqueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gasyncqueue.c; sourceTree = "<group>"; };
+		FA15DE961E955145009C01E0 /* gatomic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gatomic.c; sourceTree = "<group>"; };
+		FA15DE971E955145009C01E0 /* gbacktrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gbacktrace.c; sourceTree = "<group>"; };
+		FA15DE981E955145009C01E0 /* gbytes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gbytes.c; sourceTree = "<group>"; };
+		FA15DE991E955145009C01E0 /* gcharset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gcharset.c; sourceTree = "<group>"; };
+		FA15DE9A1E955145009C01E0 /* gconvert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gconvert.c; sourceTree = "<group>"; };
+		FA15DE9B1E955145009C01E0 /* gdir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gdir.c; sourceTree = "<group>"; };
+		FA15DE9C1E955145009C01E0 /* genviron.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = genviron.c; sourceTree = "<group>"; };
+		FA15DE9D1E955145009C01E0 /* gerror.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gerror.c; sourceTree = "<group>"; };
+		FA15DE9E1E955145009C01E0 /* gfileutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gfileutils.c; sourceTree = "<group>"; };
+		FA15DE9F1E955145009C01E0 /* ggettext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ggettext.c; sourceTree = "<group>"; };
+		FA15DEA01E955145009C01E0 /* ghash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ghash.c; sourceTree = "<group>"; };
+		FA15DEA11E955145009C01E0 /* ghook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ghook.c; sourceTree = "<group>"; };
+		FA15DEA21E955145009C01E0 /* giochannel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = giochannel.c; sourceTree = "<group>"; };
+		FA15DEA31E955145009C01E0 /* glib-init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "glib-init.c"; sourceTree = "<group>"; };
+		FA15DEA41E955145009C01E0 /* glib-private.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "glib-private.c"; sourceTree = "<group>"; };
+		FA15DEA51E955145009C01E0 /* glib-unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "glib-unix.c"; sourceTree = "<group>"; };
+		FA15DEA61E955145009C01E0 /* glist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glist.c; sourceTree = "<group>"; };
+		FA15DEA71E955145009C01E0 /* gmain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gmain.c; sourceTree = "<group>"; };
+		FA15DEA81E955145009C01E0 /* gmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gmem.c; sourceTree = "<group>"; };
+		FA15DEA91E955145009C01E0 /* gmessages.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gmessages.c; sourceTree = "<group>"; };
+		FA15DEAA1E955145009C01E0 /* gnode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gnode.c; sourceTree = "<group>"; };
+		FA15DEAB1E955145009C01E0 /* gpattern.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gpattern.c; sourceTree = "<group>"; };
+		FA15DEAC1E955145009C01E0 /* gpoll.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gpoll.c; sourceTree = "<group>"; };
+		FA15DEAD1E955145009C01E0 /* gprintf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gprintf.c; sourceTree = "<group>"; };
+		FA15DEAE1E955145009C01E0 /* gqsort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gqsort.c; sourceTree = "<group>"; };
+		FA15DEAF1E955145009C01E0 /* gquark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gquark.c; sourceTree = "<group>"; };
+		FA15DEB01E955145009C01E0 /* gqueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gqueue.c; sourceTree = "<group>"; };
+		FA15DEB11E955145009C01E0 /* grand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = grand.c; sourceTree = "<group>"; };
+		FA15DEB21E955145009C01E0 /* gshell.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gshell.c; sourceTree = "<group>"; };
+		FA15DEB31E955145009C01E0 /* gslice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gslice.c; sourceTree = "<group>"; };
+		FA15DEB41E955145009C01E0 /* gslist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gslist.c; sourceTree = "<group>"; };
+		FA15DEB51E955145009C01E0 /* gspawn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gspawn.c; sourceTree = "<group>"; };
+		FA15DEB61E955145009C01E0 /* gstdio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gstdio.c; sourceTree = "<group>"; };
+		FA15DEB71E955145009C01E0 /* gstrfuncs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gstrfuncs.c; sourceTree = "<group>"; };
+		FA15DEB81E955145009C01E0 /* gstring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gstring.c; sourceTree = "<group>"; };
+		FA15DEB91E955145009C01E0 /* gstringchunk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gstringchunk.c; sourceTree = "<group>"; };
+		FA15DEBA1E955145009C01E0 /* gtestutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gtestutils.c; sourceTree = "<group>"; };
+		FA15DEBB1E955145009C01E0 /* gthread-deprecated.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "gthread-deprecated.c"; sourceTree = "<group>"; };
+		FA15DEBC1E955145009C01E0 /* gthread-posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "gthread-posix.c"; sourceTree = "<group>"; };
+		FA15DEBD1E955145009C01E0 /* gthread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gthread.c; sourceTree = "<group>"; };
+		FA15DEBE1E955145009C01E0 /* gthreadpool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gthreadpool.c; sourceTree = "<group>"; };
+		FA15DEBF1E955145009C01E0 /* gtimer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gtimer.c; sourceTree = "<group>"; };
+		FA15DEC01E955145009C01E0 /* gtrashstack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gtrashstack.c; sourceTree = "<group>"; };
+		FA15DEC11E955145009C01E0 /* gunicollate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gunicollate.c; sourceTree = "<group>"; };
+		FA15DEC21E955145009C01E0 /* gunidecomp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gunidecomp.c; sourceTree = "<group>"; };
+		FA15DEC31E955145009C01E0 /* guniprop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = guniprop.c; sourceTree = "<group>"; };
+		FA15DEC41E955145009C01E0 /* gutf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gutf8.c; sourceTree = "<group>"; };
+		FA15DEC51E955145009C01E0 /* gutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gutils.c; sourceTree = "<group>"; };
+		FA15DEC61E955145009C01E0 /* gwakeup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gwakeup.c; sourceTree = "<group>"; };
+		FA15DF2C1E955156009C01E0 /* PdExternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PdExternals.h; path = Pd/PdExternals.h; sourceTree = "<group>"; };
+		FA15DF2D1E955156009C01E0 /* PdExternals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PdExternals.m; path = Pd/PdExternals.m; sourceTree = "<group>"; };
+		FA15DF2F1E95519C009C01E0 /* soundfont-controller.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "soundfont-controller.pd"; path = "Pd/soundfont-controller.pd"; sourceTree = "<group>"; };
+		FA15DF331E9551A9009C01E0 /* AwesomeGrandPiano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AwesomeGrandPiano.sf2; sourceTree = "<group>"; };
+		FA15DF341E9551A9009C01E0 /* Basic Grand Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Basic Grand Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF351E9551A9009C01E0 /* Bright Grand Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bright Grand Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF361E9551A9009C01E0 /* Buzzy Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Buzzy Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF371E9551A9009C01E0 /* Close Chorus Grand Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Close Chorus Grand Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF381E9551A9009C01E0 /* Gentle Grand Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gentle Grand Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF391E9551A9009C01E0 /* Grandma's Living Room Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Grandma's Living Room Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF3A1E9551A9009C01E0 /* Harsh Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Harsh Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF3B1E9551A9009C01E0 /* Meaty Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Meaty Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF3C1E9551A9009C01E0 /* Muted Grand Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muted Grand Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF3D1E9551A9009C01E0 /* Sharp & Bright Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sharp & Bright Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF3E1E9551A9009C01E0 /* Theater Upright Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Theater Upright Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF3F1E9551A9009C01E0 /* Tight Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tight Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF401E9551A9009C01E0 /* Upright Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Upright Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF421E9551A9009C01E0 /* Flugelhorn.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flugelhorn.sf2; sourceTree = "<group>"; };
+		FA15DF431E9551A9009C01E0 /* Muted Trombone.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muted Trombone.sf2"; sourceTree = "<group>"; };
+		FA15DF451E9551A9009C01E0 /* Basic Electric Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Basic Electric Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF461E9551A9009C01E0 /* Bright FM Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bright FM Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF471E9551A9009C01E0 /* Chorus Electric Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chorus Electric Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF481E9551A9009C01E0 /* Classic Electric Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Classic Electric Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF491E9551A9009C01E0 /* Effected Bright Electric Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Effected Bright Electric Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF4A1E9551A9009C01E0 /* Electric Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Electric Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF4B1E9551A9009C01E0 /* Fake Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fake Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF4C1E9551A9009C01E0 /* Fender Rhodes Electric Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fender Rhodes Electric Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF4D1E9551A9009C01E0 /* Glowing Electric Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glowing Electric Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF4E1E9551A9009C01E0 /* Gold Plated Wood Electric Piano.SF2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gold Plated Wood Electric Piano.SF2"; sourceTree = "<group>"; };
+		FA15DF4F1E9551A9009C01E0 /* Muted Grand Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muted Grand Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF501E9551A9009C01E0 /* Synth Grand Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Synth Grand Piano.sf2"; sourceTree = "<group>"; };
+		FA15DF521E9551A9009C01E0 /* SC88 Kit.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SC88 Kit.sf2"; sourceTree = "<group>"; };
+		FA15DF531E9551A9009C01E0 /* Xylophone.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Xylophone.sf2; sourceTree = "<group>"; };
+		FA15DF551E9551A9009C01E0 /* Banjo.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Banjo.sf2; sourceTree = "<group>"; };
+		FA15DF561E9551A9009C01E0 /* Cello.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cello.sf2; sourceTree = "<group>"; };
+		FA15DF571E9551A9009C01E0 /* Ibanez Hollowbody.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ibanez Hollowbody.sf2"; sourceTree = "<group>"; };
+		FA15DF581E9551A9009C01E0 /* Les Paul.SF2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Les Paul.SF2"; sourceTree = "<group>"; };
+		FA15DF591E9551A9009C01E0 /* Saz.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Saz.sf2; sourceTree = "<group>"; };
+		FA15DF5A1E9551A9009C01E0 /* Viola.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Viola.sf2; sourceTree = "<group>"; };
+		FA15DF5B1E9551A9009C01E0 /* Violin.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Violin.sf2; sourceTree = "<group>"; };
+		FA15DF5D1E9551A9009C01E0 /* Attacked Analog.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Attacked Analog.sf2"; sourceTree = "<group>"; };
+		FA15DF5E1E9551A9009C01E0 /* Chorus Lead.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chorus Lead.sf2"; sourceTree = "<group>"; };
+		FA15DF601E9551A9009C01E0 /* Beautiful Pad.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Beautiful Pad.sf2"; sourceTree = "<group>"; };
+		FA15DF611E9551A9009C01E0 /* Epic Pad.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epic Pad.sf2"; sourceTree = "<group>"; };
+		FA15DF621E9551A9009C01E0 /* Mechanical Pad.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mechanical Pad.sf2"; sourceTree = "<group>"; };
+		FA15DF631E9551A9009C01E0 /* Mixed Pad.SF2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mixed Pad.SF2"; sourceTree = "<group>"; };
+		FA15DF641E9551A9009C01E0 /* Saw Pad.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Saw Pad.sf2"; sourceTree = "<group>"; };
+		FA15DF651E9551A9009C01E0 /* Shiny Pad.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shiny Pad.sf2"; sourceTree = "<group>"; };
+		FA15DF661E9551A9009C01E0 /* Suspense Pad.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Suspense Pad.sf2"; sourceTree = "<group>"; };
+		FA15DF671E9551A9009C01E0 /* Vocal Synth.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vocal Synth.sf2"; sourceTree = "<group>"; };
+		FA15DF681E9551A9009C01E0 /* Weather Pad.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Weather Pad.sf2"; sourceTree = "<group>"; };
+		FA15DF6A1E9551A9009C01E0 /* Bolivian Flute.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bolivian Flute.sf2"; sourceTree = "<group>"; };
+		FA15DF6B1E9551A9009C01E0 /* Church Organ.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Church Organ.sf2"; sourceTree = "<group>"; };
+		FA15DF6C1E9551A9009C01E0 /* Enigma Flute.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Enigma Flute.sf2"; sourceTree = "<group>"; };
+		FA15DF6D1E9551A9009C01E0 /* Mixed Chorus.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mixed Chorus.sf2"; sourceTree = "<group>"; };
+		FA15DF6E1E9551A9009C01E0 /* Strawberry Fields Mellotron Flute.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Strawberry Fields Mellotron Flute.sf2"; sourceTree = "<group>"; };
+		FA15DF6F1E9551A9009C01E0 /* soundfonts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = soundfonts.c; path = Pd/soundfonts.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +481,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF06794E81A65BF6DB5F7AD /* libPods-Pd-iOS-Soundfont-Test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A15150375DFDABF72DB16C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2644B1940B5A9AA576433168 /* Pods-Pd-iOS-Soundfont-Test.debug.xcconfig */,
+				6D1C7A137985B3CEF7E9B6A1 /* Pods-Pd-iOS-Soundfont-Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76392A8060EADF7E6524AEE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4435208794A510E748BFD7A8 /* libPods-Pd-iOS-Soundfont-Test.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA15D27D1E95505A009C01E0 = {
 			isa = PBXGroup;
 			children = (
 				FA15D2881E95505A009C01E0 /* Pd-iOS-Soundfont-Test */,
 				FA15D2871E95505A009C01E0 /* Products */,
+				1A15150375DFDABF72DB16C8 /* Pods */,
+				76392A8060EADF7E6524AEE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +526,7 @@
 		FA15D2881E95505A009C01E0 /* Pd-iOS-Soundfont-Test */ = {
 			isa = PBXGroup;
 			children = (
+				FA15DAAA1E9550F6009C01E0 /* Pd */,
 				FA15D28C1E95505A009C01E0 /* AppDelegate.h */,
 				FA15D28D1E95505A009C01E0 /* AppDelegate.m */,
 				FA15D28F1E95505A009C01E0 /* ViewController.h */,
@@ -79,6 +548,462 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FA15DAAA1E9550F6009C01E0 /* Pd */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DF2F1E95519C009C01E0 /* soundfont-controller.pd */,
+				FA15DF2C1E955156009C01E0 /* PdExternals.h */,
+				FA15DF2D1E955156009C01E0 /* PdExternals.m */,
+				FA15DF6F1E9551A9009C01E0 /* soundfonts.c */,
+				FA15DDD61E955145009C01E0 /* fluidsynth */,
+				FA15DF311E9551A9009C01E0 /* soundfonts */,
+			);
+			name = Pd;
+			sourceTree = "<group>";
+		};
+		FA15DDD61E955145009C01E0 /* fluidsynth */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DDD71E955145009C01E0 /* fluidsynth */,
+				FA15DE3E1E955145009C01E0 /* glib */,
+			);
+			name = fluidsynth;
+			path = Pd/fluidsynth;
+			sourceTree = "<group>";
+		};
+		FA15DDD71E955145009C01E0 /* fluidsynth */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DDD81E955145009C01E0 /* fluidsynth */,
+			);
+			path = fluidsynth;
+			sourceTree = "<group>";
+		};
+		FA15DDD81E955145009C01E0 /* fluidsynth */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DDD91E955145009C01E0 /* include */,
+				FA15DDEE1E955145009C01E0 /* src */,
+			);
+			path = fluidsynth;
+			sourceTree = "<group>";
+		};
+		FA15DDD91E955145009C01E0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DDDA1E955145009C01E0 /* fluidsynth */,
+				FA15DDED1E955145009C01E0 /* fluidsynth.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FA15DDDA1E955145009C01E0 /* fluidsynth */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DDDB1E955145009C01E0 /* audio.h */,
+				FA15DDDC1E955145009C01E0 /* config.h */,
+				FA15DDDD1E955145009C01E0 /* event.h */,
+				FA15DDDE1E955145009C01E0 /* gen.h */,
+				FA15DDDF1E955145009C01E0 /* log.h */,
+				FA15DDE01E955145009C01E0 /* midi.h */,
+				FA15DDE11E955145009C01E0 /* misc.h */,
+				FA15DDE21E955145009C01E0 /* mod.h */,
+				FA15DDE31E955145009C01E0 /* ramsfont.h */,
+				FA15DDE41E955145009C01E0 /* seq.h */,
+				FA15DDE51E955145009C01E0 /* seqbind.h */,
+				FA15DDE61E955145009C01E0 /* settings.h */,
+				FA15DDE71E955145009C01E0 /* sfont.h */,
+				FA15DDE81E955145009C01E0 /* shell.h */,
+				FA15DDE91E955145009C01E0 /* synth.h */,
+				FA15DDEA1E955145009C01E0 /* types.h */,
+				FA15DDEB1E955145009C01E0 /* version.h */,
+				FA15DDEC1E955145009C01E0 /* voice.h */,
+			);
+			path = fluidsynth;
+			sourceTree = "<group>";
+		};
+		FA15DDEE1E955145009C01E0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DDEF1E955145009C01E0 /* fluid_adriver.c */,
+				FA15DDF01E955145009C01E0 /* fluid_adriver.h */,
+				FA15DDF11E955145009C01E0 /* fluid_adsr_env.c */,
+				FA15DDF21E955145009C01E0 /* fluid_adsr_env.h */,
+				FA15DDF31E955145009C01E0 /* fluid_alsa.c */,
+				FA15DDF41E955145009C01E0 /* fluid_aufile.c */,
+				FA15DDF51E955145009C01E0 /* fluid_chan.c */,
+				FA15DDF61E955145009C01E0 /* fluid_chan.h */,
+				FA15DDF71E955145009C01E0 /* fluid_chorus.c */,
+				FA15DDF81E955145009C01E0 /* fluid_chorus.h */,
+				FA15DDF91E955145009C01E0 /* fluid_cmd.c */,
+				FA15DDFA1E955145009C01E0 /* fluid_cmd.h */,
+				FA15DDFB1E955145009C01E0 /* fluid_conv.c */,
+				FA15DDFC1E955145009C01E0 /* fluid_conv.h */,
+				FA15DDFD1E955145009C01E0 /* fluid_coreaudio.c */,
+				FA15DDFE1E955145009C01E0 /* fluid_coremidi.c */,
+				FA15DDFF1E955145009C01E0 /* fluid_dart.c */,
+				FA15DE001E955145009C01E0 /* fluid_defsfont.c */,
+				FA15DE011E955145009C01E0 /* fluid_defsfont.h */,
+				FA15DE021E955145009C01E0 /* fluid_event.c */,
+				FA15DE031E955145009C01E0 /* fluid_event_priv.h */,
+				FA15DE041E955145009C01E0 /* fluid_event_queue.c */,
+				FA15DE051E955145009C01E0 /* fluid_event_queue.h */,
+				FA15DE061E955145009C01E0 /* fluid_filerenderer.c */,
+				FA15DE071E955145009C01E0 /* fluid_gen.c */,
+				FA15DE081E955145009C01E0 /* fluid_gen.h */,
+				FA15DE091E955145009C01E0 /* fluid_hash.c */,
+				FA15DE0A1E955145009C01E0 /* fluid_hash.h */,
+				FA15DE0B1E955145009C01E0 /* fluid_iir_filter.c */,
+				FA15DE0C1E955145009C01E0 /* fluid_iir_filter.h */,
+				FA15DE0D1E955145009C01E0 /* fluid_ladspa.c */,
+				FA15DE0E1E955145009C01E0 /* fluid_ladspa.h */,
+				FA15DE0F1E955145009C01E0 /* fluid_lfo.c */,
+				FA15DE101E955145009C01E0 /* fluid_lfo.h */,
+				FA15DE111E955145009C01E0 /* fluid_list.c */,
+				FA15DE121E955145009C01E0 /* fluid_list.h */,
+				FA15DE131E955145009C01E0 /* fluid_mdriver.c */,
+				FA15DE141E955145009C01E0 /* fluid_mdriver.h */,
+				FA15DE151E955145009C01E0 /* fluid_midi.c */,
+				FA15DE161E955145009C01E0 /* fluid_midi.h */,
+				FA15DE171E955145009C01E0 /* fluid_midi_router.c */,
+				FA15DE181E955145009C01E0 /* fluid_midi_router.h */,
+				FA15DE191E955145009C01E0 /* fluid_midishare.c */,
+				FA15DE1A1E955145009C01E0 /* fluid_mod.c */,
+				FA15DE1B1E955145009C01E0 /* fluid_mod.h */,
+				FA15DE1C1E955145009C01E0 /* fluid_oss.c */,
+				FA15DE1D1E955145009C01E0 /* fluid_phase.h */,
+				FA15DE1E1E955145009C01E0 /* fluid_ramsfont.c */,
+				FA15DE1F1E955145009C01E0 /* fluid_ramsfont.h */,
+				FA15DE201E955145009C01E0 /* fluid_rev.c */,
+				FA15DE211E955145009C01E0 /* fluid_rev.h */,
+				FA15DE221E955145009C01E0 /* fluid_ringbuffer.c */,
+				FA15DE231E955145009C01E0 /* fluid_ringbuffer.h */,
+				FA15DE241E955145009C01E0 /* fluid_rtkit.c */,
+				FA15DE251E955145009C01E0 /* fluid_rtkit.h */,
+				FA15DE261E955145009C01E0 /* fluid_rvoice.c */,
+				FA15DE271E955145009C01E0 /* fluid_rvoice.h */,
+				FA15DE281E955145009C01E0 /* fluid_rvoice_dsp.c */,
+				FA15DE291E955145009C01E0 /* fluid_rvoice_event.c */,
+				FA15DE2A1E955145009C01E0 /* fluid_rvoice_event.h */,
+				FA15DE2B1E955145009C01E0 /* fluid_rvoice_handler.c */,
+				FA15DE2C1E955145009C01E0 /* fluid_rvoice_handler.h */,
+				FA15DE2D1E955145009C01E0 /* fluid_rvoice_mixer.c */,
+				FA15DE2E1E955145009C01E0 /* fluid_rvoice_mixer.h */,
+				FA15DE2F1E955145009C01E0 /* fluid_seq.c */,
+				FA15DE301E955145009C01E0 /* fluid_seqbind.c */,
+				FA15DE311E955145009C01E0 /* fluid_settings.c */,
+				FA15DE321E955145009C01E0 /* fluid_settings.h */,
+				FA15DE331E955145009C01E0 /* fluid_sfont.h */,
+				FA15DE341E955145009C01E0 /* fluid_sndmgr.c */,
+				FA15DE351E955145009C01E0 /* fluid_synth.c */,
+				FA15DE361E955145009C01E0 /* fluid_synth.h */,
+				FA15DE371E955145009C01E0 /* fluid_sys.c */,
+				FA15DE381E955145009C01E0 /* fluid_sys.h */,
+				FA15DE391E955145009C01E0 /* fluid_tuning.c */,
+				FA15DE3A1E955145009C01E0 /* fluid_tuning.h */,
+				FA15DE3B1E955145009C01E0 /* fluid_voice.c */,
+				FA15DE3C1E955145009C01E0 /* fluid_voice.h */,
+				FA15DE3D1E955145009C01E0 /* fluidsynth_priv.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		FA15DE3E1E955145009C01E0 /* glib */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DE3F1E955145009C01E0 /* gnulib */,
+				FA15DE4A1E955145009C01E0 /* include */,
+				FA15DE8F1E955145009C01E0 /* libcharset */,
+				FA15DE931E955145009C01E0 /* src */,
+			);
+			path = glib;
+			sourceTree = "<group>";
+		};
+		FA15DE3F1E955145009C01E0 /* gnulib */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DE401E955145009C01E0 /* asnprintf.c */,
+				FA15DE411E955145009C01E0 /* g-gnulib.h */,
+				FA15DE421E955145009C01E0 /* printf-args.c */,
+				FA15DE431E955145009C01E0 /* printf-args.h */,
+				FA15DE441E955145009C01E0 /* printf-parse.c */,
+				FA15DE451E955145009C01E0 /* printf-parse.h */,
+				FA15DE461E955145009C01E0 /* printf.c */,
+				FA15DE471E955145009C01E0 /* printf.h */,
+				FA15DE481E955145009C01E0 /* vasnprintf.c */,
+				FA15DE491E955145009C01E0 /* vasnprintf.h */,
+			);
+			path = gnulib;
+			sourceTree = "<group>";
+		};
+		FA15DE4A1E955145009C01E0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DE4B1E955145009C01E0 /* galloca.h */,
+				FA15DE4C1E955145009C01E0 /* garray.h */,
+				FA15DE4D1E955145009C01E0 /* gasyncqueue.h */,
+				FA15DE4E1E955145009C01E0 /* gasyncqueueprivate.h */,
+				FA15DE4F1E955145009C01E0 /* gatomic.h */,
+				FA15DE501E955145009C01E0 /* gbacktrace.h */,
+				FA15DE511E955145009C01E0 /* gbytes.h */,
+				FA15DE521E955145009C01E0 /* gcharset.h */,
+				FA15DE531E955145009C01E0 /* gcharsetprivate.h */,
+				FA15DE541E955145009C01E0 /* gconstructor.h */,
+				FA15DE551E955145009C01E0 /* gconvert.h */,
+				FA15DE561E955145009C01E0 /* gdir.h */,
+				FA15DE571E955145009C01E0 /* genviron.h */,
+				FA15DE581E955145009C01E0 /* gerror.h */,
+				FA15DE591E955145009C01E0 /* gfileutils.h */,
+				FA15DE5A1E955145009C01E0 /* ggettext.h */,
+				FA15DE5B1E955145009C01E0 /* ghash.h */,
+				FA15DE5C1E955145009C01E0 /* ghook.h */,
+				FA15DE5D1E955145009C01E0 /* giochannel.h */,
+				FA15DE5E1E955145009C01E0 /* glib-init.h */,
+				FA15DE5F1E955145009C01E0 /* glib-private.h */,
+				FA15DE601E955145009C01E0 /* glib-unix.h */,
+				FA15DE611E955145009C01E0 /* glib.h */,
+				FA15DE621E955145009C01E0 /* glib_trace.h */,
+				FA15DE631E955145009C01E0 /* glibconfig.h */,
+				FA15DE641E955145009C01E0 /* glibintl.h */,
+				FA15DE651E955145009C01E0 /* glist.h */,
+				FA15DE661E955145009C01E0 /* gmacros.h */,
+				FA15DE671E955145009C01E0 /* gmain-internal.h */,
+				FA15DE681E955145009C01E0 /* gmain.h */,
+				FA15DE691E955145009C01E0 /* gmem.h */,
+				FA15DE6A1E955145009C01E0 /* gmessages.h */,
+				FA15DE6B1E955145009C01E0 /* gmirroringtable.h */,
+				FA15DE6C1E955145009C01E0 /* gnode.h */,
+				FA15DE6D1E955145009C01E0 /* gpattern.h */,
+				FA15DE6E1E955145009C01E0 /* gpoll.h */,
+				FA15DE6F1E955145009C01E0 /* gprintf.h */,
+				FA15DE701E955145009C01E0 /* gprintfint.h */,
+				FA15DE711E955145009C01E0 /* gqsort.h */,
+				FA15DE721E955145009C01E0 /* gquark.h */,
+				FA15DE731E955145009C01E0 /* gqueue.h */,
+				FA15DE741E955145009C01E0 /* grand.h */,
+				FA15DE751E955145009C01E0 /* gscripttable.h */,
+				FA15DE761E955145009C01E0 /* gshell.h */,
+				FA15DE771E955145009C01E0 /* gslice.h */,
+				FA15DE781E955145009C01E0 /* gslist.h */,
+				FA15DE791E955145009C01E0 /* gspawn.h */,
+				FA15DE7A1E955145009C01E0 /* gstdio.h */,
+				FA15DE7B1E955145009C01E0 /* gstrfuncs.h */,
+				FA15DE7C1E955145009C01E0 /* gstring.h */,
+				FA15DE7D1E955145009C01E0 /* gstringchunk.h */,
+				FA15DE7E1E955145009C01E0 /* gtestutils.h */,
+				FA15DE7F1E955145009C01E0 /* gthread-depreciated.h */,
+				FA15DE801E955145009C01E0 /* gthread.h */,
+				FA15DE811E955145009C01E0 /* gthreadpool.h */,
+				FA15DE821E955145009C01E0 /* gthreadprivate.h */,
+				FA15DE831E955145009C01E0 /* gtimer.h */,
+				FA15DE841E955145009C01E0 /* gtrashstack.h */,
+				FA15DE851E955145009C01E0 /* gtypes.h */,
+				FA15DE861E955145009C01E0 /* gunichartables.h */,
+				FA15DE871E955145009C01E0 /* gunicode.h */,
+				FA15DE881E955145009C01E0 /* gunicodeprivate.h */,
+				FA15DE891E955145009C01E0 /* gunicomp.h */,
+				FA15DE8A1E955145009C01E0 /* gunidecomp.h */,
+				FA15DE8B1E955145009C01E0 /* gutils.h */,
+				FA15DE8C1E955145009C01E0 /* gversionmacros.h */,
+				FA15DE8D1E955145009C01E0 /* gwakeup.h */,
+				FA15DE8E1E955145009C01E0 /* valgrind.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FA15DE8F1E955145009C01E0 /* libcharset */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DE901E955145009C01E0 /* libcharset.h */,
+				FA15DE911E955145009C01E0 /* localcharset.c */,
+				FA15DE921E955145009C01E0 /* localcharset.h */,
+			);
+			path = libcharset;
+			sourceTree = "<group>";
+		};
+		FA15DE931E955145009C01E0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DE941E955145009C01E0 /* garray.c */,
+				FA15DE951E955145009C01E0 /* gasyncqueue.c */,
+				FA15DE961E955145009C01E0 /* gatomic.c */,
+				FA15DE971E955145009C01E0 /* gbacktrace.c */,
+				FA15DE981E955145009C01E0 /* gbytes.c */,
+				FA15DE991E955145009C01E0 /* gcharset.c */,
+				FA15DE9A1E955145009C01E0 /* gconvert.c */,
+				FA15DE9B1E955145009C01E0 /* gdir.c */,
+				FA15DE9C1E955145009C01E0 /* genviron.c */,
+				FA15DE9D1E955145009C01E0 /* gerror.c */,
+				FA15DE9E1E955145009C01E0 /* gfileutils.c */,
+				FA15DE9F1E955145009C01E0 /* ggettext.c */,
+				FA15DEA01E955145009C01E0 /* ghash.c */,
+				FA15DEA11E955145009C01E0 /* ghook.c */,
+				FA15DEA21E955145009C01E0 /* giochannel.c */,
+				FA15DEA31E955145009C01E0 /* glib-init.c */,
+				FA15DEA41E955145009C01E0 /* glib-private.c */,
+				FA15DEA51E955145009C01E0 /* glib-unix.c */,
+				FA15DEA61E955145009C01E0 /* glist.c */,
+				FA15DEA71E955145009C01E0 /* gmain.c */,
+				FA15DEA81E955145009C01E0 /* gmem.c */,
+				FA15DEA91E955145009C01E0 /* gmessages.c */,
+				FA15DEAA1E955145009C01E0 /* gnode.c */,
+				FA15DEAB1E955145009C01E0 /* gpattern.c */,
+				FA15DEAC1E955145009C01E0 /* gpoll.c */,
+				FA15DEAD1E955145009C01E0 /* gprintf.c */,
+				FA15DEAE1E955145009C01E0 /* gqsort.c */,
+				FA15DEAF1E955145009C01E0 /* gquark.c */,
+				FA15DEB01E955145009C01E0 /* gqueue.c */,
+				FA15DEB11E955145009C01E0 /* grand.c */,
+				FA15DEB21E955145009C01E0 /* gshell.c */,
+				FA15DEB31E955145009C01E0 /* gslice.c */,
+				FA15DEB41E955145009C01E0 /* gslist.c */,
+				FA15DEB51E955145009C01E0 /* gspawn.c */,
+				FA15DEB61E955145009C01E0 /* gstdio.c */,
+				FA15DEB71E955145009C01E0 /* gstrfuncs.c */,
+				FA15DEB81E955145009C01E0 /* gstring.c */,
+				FA15DEB91E955145009C01E0 /* gstringchunk.c */,
+				FA15DEBA1E955145009C01E0 /* gtestutils.c */,
+				FA15DEBB1E955145009C01E0 /* gthread-deprecated.c */,
+				FA15DEBC1E955145009C01E0 /* gthread-posix.c */,
+				FA15DEBD1E955145009C01E0 /* gthread.c */,
+				FA15DEBE1E955145009C01E0 /* gthreadpool.c */,
+				FA15DEBF1E955145009C01E0 /* gtimer.c */,
+				FA15DEC01E955145009C01E0 /* gtrashstack.c */,
+				FA15DEC11E955145009C01E0 /* gunicollate.c */,
+				FA15DEC21E955145009C01E0 /* gunidecomp.c */,
+				FA15DEC31E955145009C01E0 /* guniprop.c */,
+				FA15DEC41E955145009C01E0 /* gutf8.c */,
+				FA15DEC51E955145009C01E0 /* gutils.c */,
+				FA15DEC61E955145009C01E0 /* gwakeup.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		FA15DF311E9551A9009C01E0 /* soundfonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DF321E9551A9009C01E0 /* Acoustic Piano */,
+				FA15DF411E9551A9009C01E0 /* Brass */,
+				FA15DF441E9551A9009C01E0 /* Electric Piano */,
+				FA15DF511E9551A9009C01E0 /* Percussion */,
+				FA15DF541E9551A9009C01E0 /* String */,
+				FA15DF5C1E9551A9009C01E0 /* Synth Lead */,
+				FA15DF5F1E9551A9009C01E0 /* Synth Pad */,
+				FA15DF691E9551A9009C01E0 /* Wind */,
+			);
+			name = soundfonts;
+			path = Pd/soundfonts;
+			sourceTree = "<group>";
+		};
+		FA15DF321E9551A9009C01E0 /* Acoustic Piano */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DF331E9551A9009C01E0 /* AwesomeGrandPiano.sf2 */,
+				FA15DF341E9551A9009C01E0 /* Basic Grand Piano.sf2 */,
+				FA15DF351E9551A9009C01E0 /* Bright Grand Piano.sf2 */,
+				FA15DF361E9551A9009C01E0 /* Buzzy Piano.sf2 */,
+				FA15DF371E9551A9009C01E0 /* Close Chorus Grand Piano.sf2 */,
+				FA15DF381E9551A9009C01E0 /* Gentle Grand Piano.sf2 */,
+				FA15DF391E9551A9009C01E0 /* Grandma's Living Room Piano.sf2 */,
+				FA15DF3A1E9551A9009C01E0 /* Harsh Piano.sf2 */,
+				FA15DF3B1E9551A9009C01E0 /* Meaty Piano.sf2 */,
+				FA15DF3C1E9551A9009C01E0 /* Muted Grand Piano.sf2 */,
+				FA15DF3D1E9551A9009C01E0 /* Sharp & Bright Piano.sf2 */,
+				FA15DF3E1E9551A9009C01E0 /* Theater Upright Piano.sf2 */,
+				FA15DF3F1E9551A9009C01E0 /* Tight Piano.sf2 */,
+				FA15DF401E9551A9009C01E0 /* Upright Piano.sf2 */,
+			);
+			path = "Acoustic Piano";
+			sourceTree = "<group>";
+		};
+		FA15DF411E9551A9009C01E0 /* Brass */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DF421E9551A9009C01E0 /* Flugelhorn.sf2 */,
+				FA15DF431E9551A9009C01E0 /* Muted Trombone.sf2 */,
+			);
+			path = Brass;
+			sourceTree = "<group>";
+		};
+		FA15DF441E9551A9009C01E0 /* Electric Piano */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DF451E9551A9009C01E0 /* Basic Electric Piano.sf2 */,
+				FA15DF461E9551A9009C01E0 /* Bright FM Piano.sf2 */,
+				FA15DF471E9551A9009C01E0 /* Chorus Electric Piano.sf2 */,
+				FA15DF481E9551A9009C01E0 /* Classic Electric Piano.sf2 */,
+				FA15DF491E9551A9009C01E0 /* Effected Bright Electric Piano.sf2 */,
+				FA15DF4A1E9551A9009C01E0 /* Electric Piano.sf2 */,
+				FA15DF4B1E9551A9009C01E0 /* Fake Piano.sf2 */,
+				FA15DF4C1E9551A9009C01E0 /* Fender Rhodes Electric Piano.sf2 */,
+				FA15DF4D1E9551A9009C01E0 /* Glowing Electric Piano.sf2 */,
+				FA15DF4E1E9551A9009C01E0 /* Gold Plated Wood Electric Piano.SF2 */,
+				FA15DF4F1E9551A9009C01E0 /* Muted Grand Piano.sf2 */,
+				FA15DF501E9551A9009C01E0 /* Synth Grand Piano.sf2 */,
+			);
+			path = "Electric Piano";
+			sourceTree = "<group>";
+		};
+		FA15DF511E9551A9009C01E0 /* Percussion */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DF521E9551A9009C01E0 /* SC88 Kit.sf2 */,
+				FA15DF531E9551A9009C01E0 /* Xylophone.sf2 */,
+			);
+			path = Percussion;
+			sourceTree = "<group>";
+		};
+		FA15DF541E9551A9009C01E0 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DF551E9551A9009C01E0 /* Banjo.sf2 */,
+				FA15DF561E9551A9009C01E0 /* Cello.sf2 */,
+				FA15DF571E9551A9009C01E0 /* Ibanez Hollowbody.sf2 */,
+				FA15DF581E9551A9009C01E0 /* Les Paul.SF2 */,
+				FA15DF591E9551A9009C01E0 /* Saz.sf2 */,
+				FA15DF5A1E9551A9009C01E0 /* Viola.sf2 */,
+				FA15DF5B1E9551A9009C01E0 /* Violin.sf2 */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		FA15DF5C1E9551A9009C01E0 /* Synth Lead */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DF5D1E9551A9009C01E0 /* Attacked Analog.sf2 */,
+				FA15DF5E1E9551A9009C01E0 /* Chorus Lead.sf2 */,
+			);
+			path = "Synth Lead";
+			sourceTree = "<group>";
+		};
+		FA15DF5F1E9551A9009C01E0 /* Synth Pad */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DF601E9551A9009C01E0 /* Beautiful Pad.sf2 */,
+				FA15DF611E9551A9009C01E0 /* Epic Pad.sf2 */,
+				FA15DF621E9551A9009C01E0 /* Mechanical Pad.sf2 */,
+				FA15DF631E9551A9009C01E0 /* Mixed Pad.SF2 */,
+				FA15DF641E9551A9009C01E0 /* Saw Pad.sf2 */,
+				FA15DF651E9551A9009C01E0 /* Shiny Pad.sf2 */,
+				FA15DF661E9551A9009C01E0 /* Suspense Pad.sf2 */,
+				FA15DF671E9551A9009C01E0 /* Vocal Synth.sf2 */,
+				FA15DF681E9551A9009C01E0 /* Weather Pad.sf2 */,
+			);
+			path = "Synth Pad";
+			sourceTree = "<group>";
+		};
+		FA15DF691E9551A9009C01E0 /* Wind */ = {
+			isa = PBXGroup;
+			children = (
+				FA15DF6A1E9551A9009C01E0 /* Bolivian Flute.sf2 */,
+				FA15DF6B1E9551A9009C01E0 /* Church Organ.sf2 */,
+				FA15DF6C1E9551A9009C01E0 /* Enigma Flute.sf2 */,
+				FA15DF6D1E9551A9009C01E0 /* Mixed Chorus.sf2 */,
+				FA15DF6E1E9551A9009C01E0 /* Strawberry Fields Mellotron Flute.sf2 */,
+			);
+			path = Wind;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +1011,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA15D29D1E95505A009C01E0 /* Build configuration list for PBXNativeTarget "Pd-iOS-Soundfont-Test" */;
 			buildPhases = (
+				1BB932F37C8C3E770FC42F78 /* [CP] Check Pods Manifest.lock */,
 				FA15D2821E95505A009C01E0 /* Sources */,
 				FA15D2831E95505A009C01E0 /* Frameworks */,
 				FA15D2841E95505A009C01E0 /* Resources */,
+				46242DD090A1A9A3565F44E3 /* [CP] Embed Pods Frameworks */,
+				4CE3E204AE8D33D4B3CB4021 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,22 +1066,227 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA15DF9E1E9551A9009C01E0 /* Vocal Synth.sf2 in Resources */,
+				FA15DF921E9551A9009C01E0 /* Saz.sf2 in Resources */,
+				FA15DF7D1E9551A9009C01E0 /* Upright Piano.sf2 in Resources */,
+				FA15DF9D1E9551A9009C01E0 /* Suspense Pad.sf2 in Resources */,
 				FA15D2991E95505A009C01E0 /* LaunchScreen.storyboard in Resources */,
+				FA15DF941E9551A9009C01E0 /* Violin.sf2 in Resources */,
+				FA15DFA21E9551A9009C01E0 /* Enigma Flute.sf2 in Resources */,
 				FA15D2961E95505A009C01E0 /* Assets.xcassets in Resources */,
+				FA15DF901E9551A9009C01E0 /* Ibanez Hollowbody.sf2 in Resources */,
+				FA15DF8C1E9551A9009C01E0 /* SC88 Kit.sf2 in Resources */,
+				FA15DF841E9551A9009C01E0 /* Effected Bright Electric Piano.sf2 in Resources */,
+				FA15DF981E9551A9009C01E0 /* Epic Pad.sf2 in Resources */,
+				FA15DF871E9551A9009C01E0 /* Fender Rhodes Electric Piano.sf2 in Resources */,
+				FA15DF701E9551A9009C01E0 /* AwesomeGrandPiano.sf2 in Resources */,
+				FA15DF9F1E9551A9009C01E0 /* Weather Pad.sf2 in Resources */,
+				FA15DF7C1E9551A9009C01E0 /* Tight Piano.sf2 in Resources */,
+				FA15DF9C1E9551A9009C01E0 /* Shiny Pad.sf2 in Resources */,
+				FA15DF8B1E9551A9009C01E0 /* Synth Grand Piano.sf2 in Resources */,
+				FA15DF971E9551A9009C01E0 /* Beautiful Pad.sf2 in Resources */,
+				FA15DF761E9551A9009C01E0 /* Grandma's Living Room Piano.sf2 in Resources */,
+				FA15DF731E9551A9009C01E0 /* Buzzy Piano.sf2 in Resources */,
+				FA15DF881E9551A9009C01E0 /* Glowing Electric Piano.sf2 in Resources */,
+				FA15DFA11E9551A9009C01E0 /* Church Organ.sf2 in Resources */,
+				FA15DF7A1E9551A9009C01E0 /* Sharp & Bright Piano.sf2 in Resources */,
+				FA15DF7F1E9551A9009C01E0 /* Muted Trombone.sf2 in Resources */,
+				FA15DF8D1E9551A9009C01E0 /* Xylophone.sf2 in Resources */,
+				FA15DF7E1E9551A9009C01E0 /* Flugelhorn.sf2 in Resources */,
+				FA15DF711E9551A9009C01E0 /* Basic Grand Piano.sf2 in Resources */,
+				FA15DF961E9551A9009C01E0 /* Chorus Lead.sf2 in Resources */,
+				FA15DF791E9551A9009C01E0 /* Muted Grand Piano.sf2 in Resources */,
+				FA15DF951E9551A9009C01E0 /* Attacked Analog.sf2 in Resources */,
+				FA15DF741E9551A9009C01E0 /* Close Chorus Grand Piano.sf2 in Resources */,
+				FA15DF861E9551A9009C01E0 /* Fake Piano.sf2 in Resources */,
+				FA15DF7B1E9551A9009C01E0 /* Theater Upright Piano.sf2 in Resources */,
+				FA15DF811E9551A9009C01E0 /* Bright FM Piano.sf2 in Resources */,
+				FA15DF911E9551A9009C01E0 /* Les Paul.SF2 in Resources */,
+				FA15DF301E95519C009C01E0 /* soundfont-controller.pd in Resources */,
+				FA15DF821E9551A9009C01E0 /* Chorus Electric Piano.sf2 in Resources */,
+				FA15DF891E9551A9009C01E0 /* Gold Plated Wood Electric Piano.SF2 in Resources */,
+				FA15DF9A1E9551A9009C01E0 /* Mixed Pad.SF2 in Resources */,
+				FA15DF8F1E9551A9009C01E0 /* Cello.sf2 in Resources */,
+				FA15DF751E9551A9009C01E0 /* Gentle Grand Piano.sf2 in Resources */,
+				FA15DF9B1E9551A9009C01E0 /* Saw Pad.sf2 in Resources */,
+				FA15DF771E9551A9009C01E0 /* Harsh Piano.sf2 in Resources */,
 				FA15D2941E95505A009C01E0 /* Main.storyboard in Resources */,
+				FA15DF991E9551A9009C01E0 /* Mechanical Pad.sf2 in Resources */,
+				FA15DF8E1E9551A9009C01E0 /* Banjo.sf2 in Resources */,
+				FA15DF801E9551A9009C01E0 /* Basic Electric Piano.sf2 in Resources */,
+				FA15DF721E9551A9009C01E0 /* Bright Grand Piano.sf2 in Resources */,
+				FA15DFA01E9551A9009C01E0 /* Bolivian Flute.sf2 in Resources */,
+				FA15DF851E9551A9009C01E0 /* Electric Piano.sf2 in Resources */,
+				FA15DF8A1E9551A9009C01E0 /* Muted Grand Piano.sf2 in Resources */,
+				FA15DFA31E9551A9009C01E0 /* Mixed Chorus.sf2 in Resources */,
+				FA15DF931E9551A9009C01E0 /* Viola.sf2 in Resources */,
+				FA15DF781E9551A9009C01E0 /* Meaty Piano.sf2 in Resources */,
+				FA15DF831E9551A9009C01E0 /* Classic Electric Piano.sf2 in Resources */,
+				FA15DFA41E9551A9009C01E0 /* Strawberry Fields Mellotron Flute.sf2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BB932F37C8C3E770FC42F78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		46242DD090A1A9A3565F44E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pd-iOS-Soundfont-Test/Pods-Pd-iOS-Soundfont-Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CE3E204AE8D33D4B3CB4021 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pd-iOS-Soundfont-Test/Pods-Pd-iOS-Soundfont-Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA15D2821E95505A009C01E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA15DF291E955145009C01E0 /* gutf8.c in Sources */,
+				FA15DEEB1E955145009C01E0 /* fluid_seq.c in Sources */,
+				FA15DF0C1E955145009C01E0 /* gmain.c in Sources */,
+				FA15DF1A1E955145009C01E0 /* gspawn.c in Sources */,
+				FA15DEFD1E955145009C01E0 /* gbytes.c in Sources */,
+				FA15DEF31E955145009C01E0 /* asnprintf.c in Sources */,
+				FA15DF241E955145009C01E0 /* gtimer.c in Sources */,
+				FA15DF0B1E955145009C01E0 /* glist.c in Sources */,
+				FA15DF191E955145009C01E0 /* gslist.c in Sources */,
+				FA15DEEC1E955145009C01E0 /* fluid_seqbind.c in Sources */,
+				FA15DEC71E955145009C01E0 /* fluid_adriver.c in Sources */,
+				FA15DED81E955145009C01E0 /* fluid_iir_filter.c in Sources */,
+				FA15DEE41E955145009C01E0 /* fluid_ringbuffer.c in Sources */,
+				FA15DEFB1E955145009C01E0 /* gatomic.c in Sources */,
+				FA15DED51E955145009C01E0 /* fluid_filerenderer.c in Sources */,
+				FA15DF051E955145009C01E0 /* ghash.c in Sources */,
+				FA15DEEA1E955145009C01E0 /* fluid_rvoice_mixer.c in Sources */,
+				FA15DEE01E955145009C01E0 /* fluid_mod.c in Sources */,
+				FA15DECE1E955145009C01E0 /* fluid_conv.c in Sources */,
+				FA15DEED1E955145009C01E0 /* fluid_settings.c in Sources */,
+				FA15DEDA1E955145009C01E0 /* fluid_lfo.c in Sources */,
+				FA15DF221E955145009C01E0 /* gthread.c in Sources */,
+				FA15DEEF1E955145009C01E0 /* fluid_synth.c in Sources */,
+				FA15DED21E955145009C01E0 /* fluid_defsfont.c in Sources */,
+				FA15DEE71E955145009C01E0 /* fluid_rvoice_dsp.c in Sources */,
+				FA15DF231E955145009C01E0 /* gthreadpool.c in Sources */,
+				FA15DEFC1E955145009C01E0 /* gbacktrace.c in Sources */,
+				FA15DF1C1E955145009C01E0 /* gstrfuncs.c in Sources */,
+				FA15DF281E955145009C01E0 /* guniprop.c in Sources */,
+				FA15DED31E955145009C01E0 /* fluid_event.c in Sources */,
+				FA15DFA51E9551A9009C01E0 /* soundfonts.c in Sources */,
+				FA15DEEE1E955145009C01E0 /* fluid_sndmgr.c in Sources */,
+				FA15DF151E955145009C01E0 /* gqueue.c in Sources */,
+				FA15DEF91E955145009C01E0 /* garray.c in Sources */,
+				FA15DF251E955145009C01E0 /* gtrashstack.c in Sources */,
+				FA15DF031E955145009C01E0 /* gfileutils.c in Sources */,
+				FA15DEF41E955145009C01E0 /* printf-args.c in Sources */,
 				FA15D2911E95505A009C01E0 /* ViewController.m in Sources */,
+				FA15DEF11E955145009C01E0 /* fluid_tuning.c in Sources */,
+				FA15DF2A1E955145009C01E0 /* gutils.c in Sources */,
+				FA15DF101E955145009C01E0 /* gpattern.c in Sources */,
+				FA15DECB1E955145009C01E0 /* fluid_chan.c in Sources */,
+				FA15DF261E955145009C01E0 /* gunicollate.c in Sources */,
+				FA15DF111E955145009C01E0 /* gpoll.c in Sources */,
+				FA15DF171E955145009C01E0 /* gshell.c in Sources */,
 				FA15D28E1E95505A009C01E0 /* AppDelegate.m in Sources */,
+				FA15DEE21E955145009C01E0 /* fluid_ramsfont.c in Sources */,
+				FA15DED61E955145009C01E0 /* fluid_gen.c in Sources */,
+				FA15DF081E955145009C01E0 /* glib-init.c in Sources */,
+				FA15DF181E955145009C01E0 /* gslice.c in Sources */,
+				FA15DF0E1E955145009C01E0 /* gmessages.c in Sources */,
+				FA15DEDF1E955145009C01E0 /* fluid_midishare.c in Sources */,
+				FA15DF211E955145009C01E0 /* gthread-posix.c in Sources */,
+				FA15DF041E955145009C01E0 /* ggettext.c in Sources */,
+				FA15DED11E955145009C01E0 /* fluid_dart.c in Sources */,
+				FA15DECA1E955145009C01E0 /* fluid_aufile.c in Sources */,
+				FA15DEE81E955145009C01E0 /* fluid_rvoice_event.c in Sources */,
+				FA15DEC91E955145009C01E0 /* fluid_alsa.c in Sources */,
+				FA15DED71E955145009C01E0 /* fluid_hash.c in Sources */,
+				FA15DF0F1E955145009C01E0 /* gnode.c in Sources */,
+				FA15DEDE1E955145009C01E0 /* fluid_midi_router.c in Sources */,
+				FA15DF141E955145009C01E0 /* gquark.c in Sources */,
+				FA15DEFF1E955145009C01E0 /* gconvert.c in Sources */,
+				FA15DF121E955145009C01E0 /* gprintf.c in Sources */,
+				FA15DEE61E955145009C01E0 /* fluid_rvoice.c in Sources */,
+				FA15DEF71E955145009C01E0 /* vasnprintf.c in Sources */,
+				FA15DECC1E955145009C01E0 /* fluid_chorus.c in Sources */,
+				FA15DECF1E955145009C01E0 /* fluid_coreaudio.c in Sources */,
+				FA15DEC81E955145009C01E0 /* fluid_adsr_env.c in Sources */,
+				FA15DED41E955145009C01E0 /* fluid_event_queue.c in Sources */,
 				FA15D28B1E95505A009C01E0 /* main.m in Sources */,
+				FA15DF1F1E955145009C01E0 /* gtestutils.c in Sources */,
+				FA15DEE51E955145009C01E0 /* fluid_rtkit.c in Sources */,
+				FA15DEDB1E955145009C01E0 /* fluid_list.c in Sources */,
+				FA15DEF21E955145009C01E0 /* fluid_voice.c in Sources */,
+				FA15DF2E1E955156009C01E0 /* PdExternals.m in Sources */,
+				FA15DF131E955145009C01E0 /* gqsort.c in Sources */,
+				FA15DF271E955145009C01E0 /* gunidecomp.c in Sources */,
+				FA15DEF51E955145009C01E0 /* printf-parse.c in Sources */,
+				FA15DF161E955145009C01E0 /* grand.c in Sources */,
+				FA15DF061E955145009C01E0 /* ghook.c in Sources */,
+				FA15DF1B1E955145009C01E0 /* gstdio.c in Sources */,
+				FA15DEE11E955145009C01E0 /* fluid_oss.c in Sources */,
+				FA15DEE91E955145009C01E0 /* fluid_rvoice_handler.c in Sources */,
+				FA15DEFA1E955145009C01E0 /* gasyncqueue.c in Sources */,
+				FA15DF1E1E955145009C01E0 /* gstringchunk.c in Sources */,
+				FA15DED01E955145009C01E0 /* fluid_coremidi.c in Sources */,
+				FA15DF011E955145009C01E0 /* genviron.c in Sources */,
+				FA15DF2B1E955145009C01E0 /* gwakeup.c in Sources */,
+				FA15DEDC1E955145009C01E0 /* fluid_mdriver.c in Sources */,
+				FA15DF021E955145009C01E0 /* gerror.c in Sources */,
+				FA15DEFE1E955145009C01E0 /* gcharset.c in Sources */,
+				FA15DEE31E955145009C01E0 /* fluid_rev.c in Sources */,
+				FA15DEDD1E955145009C01E0 /* fluid_midi.c in Sources */,
+				FA15DF071E955145009C01E0 /* giochannel.c in Sources */,
+				FA15DF0D1E955145009C01E0 /* gmem.c in Sources */,
+				FA15DF201E955145009C01E0 /* gthread-deprecated.c in Sources */,
+				FA15DEF01E955145009C01E0 /* fluid_sys.c in Sources */,
+				FA15DECD1E955145009C01E0 /* fluid_cmd.c in Sources */,
+				FA15DEF61E955145009C01E0 /* printf.c in Sources */,
+				FA15DF1D1E955145009C01E0 /* gstring.c in Sources */,
+				FA15DEF81E955145009C01E0 /* localcharset.c in Sources */,
+				FA15DF0A1E955145009C01E0 /* glib-unix.c in Sources */,
+				FA15DED91E955145009C01E0 /* fluid_ladspa.c in Sources */,
+				FA15DF001E955145009C01E0 /* gdir.c in Sources */,
+				FA15DF091E955145009C01E0 /* glib-private.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +1404,7 @@
 		};
 		FA15D29E1E95505A009C01E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2644B1940B5A9AA576433168 /* Pods-Pd-iOS-Soundfont-Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z6JZ6JZB9U;
@@ -283,6 +1417,7 @@
 		};
 		FA15D29F1E95505A009C01E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D1C7A137985B3CEF7E9B6A1 /* Pods-Pd-iOS-Soundfont-Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z6JZ6JZB9U;
@@ -312,6 +1447,7 @@
 				FA15D29F1E95505A009C01E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
